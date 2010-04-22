@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seam-project>
+ <depends-on-projects>
+  <project name="ProjetoExemplo-ejb"/>
+  <project name="ProjetoExemplo"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <namespaces/>
+ <paths>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/core.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/hibernate-all.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/jboss-embedded-api.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/testng-jdk15.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/jboss-embedded-all.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-test/lib/thirdparty-all.jar"/>
+  <path value="/ProjetoExemplo-test/test-src/seam.properties">
+   <components>
+    <component class="properties" name="org.jboss.seam.core.init">
+     <id class="model-object"
+      path="FileSystems/ProjetoExemplo-test/test-src/seam.properties/org.jboss.seam.core.init.debug" project="ProjetoExemplo-test"/>
+     <property name="debug">
+      <id class="model-object" path="." project="ProjetoExemplo-test"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="ProjetoExemplo-test"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-test"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+   </components>
+  </path>
+ </paths>
+</seam-project>

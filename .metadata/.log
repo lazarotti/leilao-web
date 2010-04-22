@@ -1,0 +1,35 @@
+!SESSION 2010-04-22 14:42:42.066 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_17
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product -data /home/alazarot/workspaces/jbossinbossa_wk -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-22 15:49:29.530
+!MESSAGE NLS unused message: contextRootLabelInvalid in: org.eclipse.jst.servlet.ui.project.facet.WebFacetInstallPage
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-22 15:49:29.530
+!MESSAGE NLS unused message: contentDirLabelInvalid in: org.eclipse.jst.servlet.ui.project.facet.WebFacetInstallPage
+
+!ENTRY org.eclipse.wst.common.project.facet.core 2 0 2010-04-22 16:14:17.754
+!MESSAGE More than one declaration found for action type UNINSTALL of projet facet jst.java 5.0.
+
+!ENTRY org.eclipse.wst.validation 4 0 2010-04-22 17:13:28.751
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jboss.tools.common.el.core.ca.AbstractELCompletionEngine.resolveELOperand(AbstractELCompletionEngine.java:256)
+	at org.jboss.tools.common.el.core.ca.AbstractELCompletionEngine.resolve(AbstractELCompletionEngine.java:131)
+	at org.jboss.tools.jsf.web.validation.ELValidator.validateElOperand(ELValidator.java:309)
+	at org.jboss.tools.jsf.web.validation.ELValidator.validateELExpression(ELValidator.java:276)
+	at org.jboss.tools.jsf.web.validation.ELValidator.validateEL(ELValidator.java:268)
+	at org.jboss.tools.jsf.web.validation.ELValidator.validateFile(ELValidator.java:260)
+	at org.jboss.tools.jsf.web.validation.ELValidator.validateAll(ELValidator.java:176)
+	at org.jboss.tools.jst.web.kb.internal.validation.ValidatorManager.validateAll(ValidatorManager.java:99)
+	at org.jboss.tools.jst.web.kb.internal.validation.ValidatorManager.validateInJob(ValidatorManager.java:78)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:78)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-22 17:47:24.246
+!MESSAGE NLS unused message: NewHibernateMappingElementsSelectionPage_select in: org.hibernate.eclipse.jdt.ui.internal.JdtUiMessages

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seam-project>
+ <depends-on-projects>
+  <project name="MapreVida"/>
+  <project name="MapreVida-ejb"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <namespaces/>
+ <paths>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/testng-jdk15.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/jboss-embedded-all.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/thirdparty-all.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/jboss-embedded-api.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/core.jar"/>
+  <path value="/MapreVida-test/test-src/seam.properties">
+   <components>
+    <component class="properties" name="org.jboss.seam.core.init">
+     <id class="model-object"
+      path="FileSystems/MapreVida-test/test-src/seam.properties/org.jboss.seam.core.init.debug" project="MapreVida-test"/>
+     <property name="debug">
+      <id class="model-object" path="." project="MapreVida-test"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="MapreVida-test"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="MapreVida-test"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+   </components>
+  </path>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/MapreVida-test/lib/hibernate-all.jar"/>
+ </paths>
+</seam-project>

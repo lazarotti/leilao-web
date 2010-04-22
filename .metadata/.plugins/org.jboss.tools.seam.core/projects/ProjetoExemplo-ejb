@@ -1,0 +1,1546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seam-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <namespaces>
+  <namespace package="org.jboss.seam.theme"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/theme"/>
+  <namespace package="org.jboss.seam.document"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/document"/>
+  <namespace package="org.jboss.seam.drools"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/drools"/>
+  <namespace package="org.jboss.seam.international"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/international"/>
+  <namespace package="org.jboss.seam.navigation"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/navigation"/>
+  <namespace package="org.jboss.seam.web"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/web"/>
+  <namespace package="org.jboss.seam.async"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/async"/>
+  <namespace package="org.jboss.seam.cache"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/cache"/>
+  <namespace package="org.jboss.seam.remoting"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/jboss-seam-remoting.jar" uri="http://jboss.com/products/seam/remoting"/>
+  <namespace package="org.jboss.seam.core"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/core"/>
+  <namespace package="org.jboss.seam.security"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.security.permission"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.security.management"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.jms"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/jms"/>
+  <namespace package="org.jboss.seam.captcha"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/captcha"/>
+  <namespace package="org.jboss.seam.transaction"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/transaction"/>
+  <namespace package="org.jboss.seam.bpm"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/bpm"/>
+  <namespace package="org.jboss.seam.framework"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/framework"/>
+  <namespace package="org.jboss.seam.mail"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/mail"/>
+  <namespace package="org.jboss.seam.persistence"
+   path="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/persistence"/>
+ </namespaces>
+ <paths>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/antlr-runtime.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/jboss-el.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/richfaces-api.jar"/>
+  <path value="/ProjetoExemplo-ejb/ejbModule/org/domain/projetoexemplo/session/CountEJBBean.java">
+   <components>
+    <component class="java" name="countEJB" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.domain.projetoexemplo.session.CountEJBBean"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="10" start="426" value="countEJB"/>
+      </entry>
+     </attributes>
+     <bijected>
+      <bijected-attribute attr-types="IN;" name="statusMessages">
+       <id class="field" name="statusMessages"/>
+       <attributes>
+        <entry name="name">
+         <value-info length="35" start="583" value="statusMessages"/>
+        </entry>
+        <entry name="org.jboss.seam.annotations.In">
+         <value-info length="3" start="583" value="org.jboss.seam.annotations.In"/>
+        </entry>
+       </attributes>
+       <java-source class="field" name="statusMessages"/>
+      </bijected-attribute>
+     </bijected>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+   </components>
+  </path>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/drools-compiler.jar"/>
+  <path value="/ProjetoExemplo-ejb/ejbModule/org/domain/projetoexemplo/session/TestadorBean.java">
+   <components>
+    <component class="java" name="testador" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.domain.projetoexemplo.session.TestadorBean"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="10" start="254" value="testador"/>
+      </entry>
+     </attributes>
+    </component>
+   </components>
+  </path>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/drools-core.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/jboss-seam.jar">
+   <components>
+    <component class="java"
+     name="org.jboss.seam.transaction.synchronizations" precedence="10" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.EjbSynchronizations"/>
+     <bean-types>
+      <bean-type name="STATEFUL">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+     <methods>
+      <method comp-types="REMOVE;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.ejbTransaction" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.EjbTransaction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.EntityTransaction"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="validate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.facesTransactionEvents"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.FacesTransactionEvents"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addTransactionFailedMessage" params="I,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.HibernateTransaction"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="validate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.NoTransaction"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.RollbackInterceptor"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.synchronizations" precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.SeSynchronizations"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.Transaction"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTransaction" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.transaction.TransactionInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.BijectionInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.contexts"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.conversation"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Conversation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationEntries" precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationEntries"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.ConversationIdGenerator" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationIdGenerator"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationInterceptor"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationListFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationList"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationPropagation" precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationPropagation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationStackFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationStack"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationalInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.EventInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.events"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Events"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.expressions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Expressions"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.init"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Init"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.interpolator"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Interpolator"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.manager"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Manager"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.MethodContextInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceBundle"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ResourceBundle"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getResourceBundle" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceLoader"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ResourceLoader"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.SynchronizationInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.validators"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Validators"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.ejb.RemoveInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.dataModels"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.DataModels"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.dateConverter"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.DateConverter"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.facesContext"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.FacesContext"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getContext" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.expressions"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.FacesExpressions"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.manager"
+     precedence="10" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.FacesManager"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.statusMessages" precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.FacesMessages"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.facesPage"
+     precedence="0" scope="PAGE">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.FacesPage"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.httpError"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.HttpError"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.isUserInRole"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.IsUserInRole"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.parameters"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.Parameters"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.redirect"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.Redirect"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.renderer"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.Renderer"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceLoader"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.ResourceLoader"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.switcher"
+     precedence="0" scope="PAGE">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.Switcher"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="createSelectItems" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.uiComponent"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.UiComponent"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getViewComponents" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.userPrincipal"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.UserPrincipal"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getUserPrincipal" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.validation"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.faces.Validation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.identifierPolicy" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.IdentifierPolicy"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.jpaPermissionStore" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.JpaPermissionStore"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permissionManager" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.PermissionManager"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permissionMapper" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.PermissionMapper"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.persistentPermissionResolver"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.PersistentPermissionResolver"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.ResolverChain"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.ruleBasedPermissionResolver"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.RuleBasedPermissionResolver"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="setUserAccountInSecurityContext" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="unAuthenticate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.ManagedQueueSender"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueSender" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.ManagedTopicPublisher"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicPublisher" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.queueConnection"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.QueueConnection"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueConnection" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.queueSession"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.QueueSession"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueSession" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.topicConnection"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.TopicConnection"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicConnection" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.topicSession"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jms.TopicSession"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicSession" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.navigation.pages"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.navigation.Pages"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.navigation.safeActions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.navigation.SafeActions"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.Component"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.webservice.WSSecurityInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.theme.themeFactory"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.theme.Theme"/>
+    </component>
+    <component class="java" name="org.jboss.seam.theme.themeSelector"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.theme.ThemeSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initDefaultTheme" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.async.asynchronousExceptionHandler"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.async.AsynchronousExceptionHandler"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.async.AsynchronousInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.async.QuartzDispatcher"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="initScheduler" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.async.ThreadPoolDispatcher"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.async.TimerServiceDispatcher"/>
+     <bean-types>
+      <bean-type name="STATELESS">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.roleAction" precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.action.RoleAction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.roleSearch" precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.action.RoleSearch"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.userAction" precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.action.UserAction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.userSearch" precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.action.UserSearch"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.localeConfig" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.LocaleConfig"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initLocaleConfig" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.localeSelector" precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.LocaleSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.messagesFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.Messages"/>
+    </component>
+    <component class="java" name="org.jboss.seam.international.timeZone"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.TimeZone"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTimeZone" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.timeZoneSelector" precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.TimeZoneSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initTimeZone" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.timeZones" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.international.TimeZones"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTimeZones" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.cache.EhCacheProvider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.cache.JbossCache2Provider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.cache.JbossCacheProvider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.cache.JbossPojoCacheProvider"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.jmx.jbossClusterMonitor" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.jmx.JBossClusterMonitor"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.EntityManagerFactory"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getEntityManagerFactory" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.EntityManagerProxyInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.Filter"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceProvider"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.HibernatePersistenceProvider"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.HibernateSessionFactory"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSessionFactory" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.HibernateSessionProxyInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.ManagedEntityInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.ManagedHibernateSession"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSession" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.ManagedPersistenceContext"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getEntityManager" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceContexts"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.PersistenceContexts"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceProvider"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.persistence.PersistenceProvider"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.openid.openid"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.openid.OpenId"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.actor"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.Actor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.businessProcess"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.BusinessProcess"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.BusinessProcessInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.jbpm"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.Jbpm"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.jbpmContext"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.ManagedJbpmContext"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getJbpmContext" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.pooledTask"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.PooledTask"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.pooledTaskInstanceList" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.PooledTaskInstanceList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getPooledTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.processInstance"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.ProcessInstance"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getProcessInstance" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.processInstanceFinder" precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.taskInstance"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.TaskInstance"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstance" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.taskInstanceList"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.TaskInstanceList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.taskInstanceListForType" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.TaskInstanceListForType"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.taskInstancePriorityList" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.TaskInstancePriorityList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.transition"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.Transition"/>
+    </component>
+    <component class="java" name="org.jboss.seam.captcha.captcha"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.captcha.Captcha"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.captcha.captchaImage"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.captcha.CaptchaImage"/>
+    </component>
+    <component class="java" name="org.jboss.seam.pageflow.pageflow"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.pageflow.Pageflow"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.ajax4jsfFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.Ajax4jsfFilter"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.web.authenticationFilter" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.AuthenticationFilter"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.servlet.characterEncodingFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.CharacterEncodingFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.contextFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.ContextFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.exceptionFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.ExceptionFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.hotDeployFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.HotDeployFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.identityFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.IdentityFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.isUserInRole"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.IsUserInRole"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getMap" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="9" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.loggingFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.LoggingFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.multipartFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.MultipartFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.parameters"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.Parameters"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.redirectFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.RedirectFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.rewriteFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.RewriteFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.servletContexts"
+     precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.ServletContexts"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.session"
+     precedence="20" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.Session"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.userPrincipal"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.UserPrincipal"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getUserPrincipal" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.wicketFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.web.WicketFilter"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="postReInitialization" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.el.referenceCache"
+     precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.el.JBossELReferenceCache"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="stop" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="start" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.mail.mailSession"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.mail.MailSession"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.document.documentStore"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.document.DocumentStore"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.drools.ManagedWorkingMemory"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getStatefulSession" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.drools.RuleAgent"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getRuleBase" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="createAgent" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.drools.RuleBase"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="compileRuleBase" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getRuleBase" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.drools.spreadsheetComponent" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.drools.SpreadsheetCompiler"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permission.permissionSearch"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.permission.action.PermissionSearch"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.configurationFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.Configuration"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.credentials"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.Credentials"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.entityPermissionChecker"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.EntityPermissionChecker"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.facesSecurityEvents" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.FacesSecurityEvents"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addNotLoggedInMessage" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addLoginFailedMessage" params="Ljavax.security.auth.login.LoginException;,"/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="postAuthenticate" params="Lorg.jboss.seam.security.Identity;,"/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addAlreadyLoggedInMessage" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addLoginSuccessfulMessage" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identity"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.Identity"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.tokenStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.JpaTokenStore"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.rememberMe"
+     precedence="0" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.RememberMe"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="credentialsUpdated" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="loggedOut" params=""/>
+      </method>
+      <method comp-types="OBSERVER;"/>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="OBSERVER;"/>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="quietLogin" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.SecurityInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.mock.mockSecureEntity"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.mock.MockSecureEntity"/>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+    <component class="java" name="org.jboss.seam.framework.currentDate"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.framework.CurrentDate"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentDate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.framework.currentDatetime" precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.framework.CurrentDatetime"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentDatetime" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.framework.currentTime"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.framework.CurrentTime"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentTime" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.framework.EntityNotFoundException"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.framework.Home"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.identityManager" precedence="0" scope="EVENT">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.IdentityManager"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identityStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.JpaIdentityStore"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="setUserAccountForSession" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identityStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.LdapIdentityStore"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.passwordHash"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.security.management.PasswordHash"/>
+    </component>
+    <component class="java" name="org.jboss.seam.exception.exceptions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.exception.Exceptions"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initialize" params=""/>
+      </method>
+     </methods>
+    </component>
+   </components>
+   <factories>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.eventContext">
+     <id class="method" name="getEventContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getEventContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.methodContext">
+     <id class="method" name="getMethodContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getMethodContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.pageContext">
+     <id class="method" name="getPageContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getPageContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.sessionContext">
+     <id class="method" name="getSessionContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getSessionContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.applicationContext">
+     <id class="method" name="getApplicationContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getApplicationContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.conversationContext">
+     <id class="method" name="getConversationContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getConversationContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.businessProcessContext">
+     <id class="method" name="getBusinessProcessContext" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getBusinessProcessContext"
+      params="" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.core.conversationList" scope="PAGE">
+     <id class="method" name="getConversationEntryList" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationList"/>
+     <java-source class="method" name="getConversationEntryList"
+      params="" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationList"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.core.conversationStack" scope="PAGE">
+     <id class="method" name="getConversationEntryStack" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationStack"/>
+     <java-source class="method" name="getConversationEntryStack"
+      params="" project="ProjetoExemplo-ejb" type="org.jboss.seam.core.ConversationStack"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.theme.theme" scope="EVENT">
+     <id class="method" name="getTheme" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.theme.Theme"/>
+     <java-source class="method" name="getTheme" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.theme.Theme"/>
+    </factory>
+    <factory auto-create="false" class="messages"
+     name="org.jboss.seam.international.messages" scope="EVENT">
+     <id class="method" name="getMessages" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.international.Messages"/>
+     <java-source class="method" name="getMessages" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.international.Messages"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.bpm.processInstanceList">
+     <id class="method" name="getProcessInstanceList" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+     <java-source class="method" name="getProcessInstanceList" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.security.configuration" scope="APPLICATION">
+     <id class="method" name="getConfiguration" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.security.Configuration"/>
+     <java-source class="method" name="getConfiguration" params=""
+      project="ProjetoExemplo-ejb" type="org.jboss.seam.security.Configuration"/>
+    </factory>
+    <factory class="xml" name="org.jboss.seam.web.webSession" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/org.jboss.seam.web.webSession" project="ProjetoExemplo-ejb"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+    <factory class="xml" name="facesMessages" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/facesMessages" project="ProjetoExemplo-ejb"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+    <factory class="xml" name="org.jboss.seam.faces.facesMessages" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/org.jboss.seam.faces.facesMessages" project="ProjetoExemplo-ejb"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="ProjetoExemplo-ejb"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+   </factories>
+   <imports>
+    <import value="org.jboss.seam.core"/>
+    <import value="org.jboss.seam.cache"/>
+    <import value="org.jboss.seam.transaction"/>
+    <import value="org.jboss.seam.framework"/>
+    <import value="org.jboss.seam.web"/>
+    <import value="org.jboss.seam.faces"/>
+    <import value="org.jboss.seam.international"/>
+    <import value="org.jboss.seam.theme"/>
+    <import value="org.jboss.seam.pageflow"/>
+    <import value="org.jboss.seam.bpm"/>
+    <import value="org.jboss.seam.jms"/>
+    <import value="org.jboss.seam.mail"/>
+    <import value="org.jboss.seam.security"/>
+    <import value="org.jboss.seam.security.management"/>
+    <import value="org.jboss.seam.security.permission"/>
+    <import value="org.jboss.seam.security.openid"/>
+    <import value="org.jboss.seam.captcha"/>
+    <import value="org.jboss.seam.excel.exporter"/>
+   </imports>
+  </path>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/commons-beanutils.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/jbpm-jpdl.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/mvel2.jar"/>
+  <path value="/ProjetoExemplo-ejb/ejbModule/org/domain/projetoexemplo/session/DoStuffBean.java">
+   <components>
+    <component class="java" name="doStuff" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.domain.projetoexemplo.session.DoStuffBean"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="9" start="294" value="doStuff"/>
+      </entry>
+     </attributes>
+     <bijected>
+      <bijected-attribute attr-types="IN;" name="statusMessages">
+       <id class="field" name="statusMessages"/>
+       <attributes>
+        <entry name="name">
+         <value-info length="35" start="380" value="statusMessages"/>
+        </entry>
+        <entry name="org.jboss.seam.annotations.In">
+         <value-info length="3" start="380" value="org.jboss.seam.annotations.In"/>
+        </entry>
+       </attributes>
+       <java-source class="field" name="statusMessages"/>
+      </bijected-attribute>
+     </bijected>
+    </component>
+   </components>
+  </path>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/drools-api.jar"/>
+  <path value="/home/alazarot/workspaces/mapfre_wk/Mapfre/ProjetoExemplo-ear/EarContent/lib/jboss-seam-remoting.jar">
+   <components>
+    <component class="java"
+     name="org.jboss.seam.remoting.messaging.subscriptionRegistry"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.remoting.messaging.SubscriptionRegistry"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.messaging.SubscriptionRegistry.userTokens"
+     precedence="20" scope="SESSION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.remoting.messaging.UserTokens"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="cleanUp" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.remoting.remoting"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.remoting.Remoting"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.gwt.gwtRemoteService" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.remoting.gwt.GWT14Service"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.gwt.gwtToSeamAdapter" precedence="0" scope="APPLICATION">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.jboss.seam.remoting.gwt.GWTToSeamAdapter"/>
+    </component>
+   </components>
+  </path>
+  <path value="/ProjetoExemplo-ejb/ejbModule/org/domain/projetoexemplo/session/Authenticator.java">
+   <components>
+    <component class="java" name="authenticator" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="ProjetoExemplo-ejb" type="org.domain.projetoexemplo.session.Authenticator"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="15" start="287" value="authenticator"/>
+      </entry>
+     </attributes>
+     <bijected>
+      <bijected-attribute attr-types="IN;" name="identity">
+       <id class="field" name="identity"/>
+       <attributes>
+        <entry name="name">
+         <value-info length="22" start="367" value="identity"/>
+        </entry>
+        <entry name="org.jboss.seam.annotations.In">
+         <value-info length="3" start="367" value="org.jboss.seam.annotations.In"/>
+        </entry>
+       </attributes>
+       <java-source class="field" name="identity"/>
+      </bijected-attribute>
+      <bijected-attribute attr-types="IN;" name="credentials">
+       <id class="field" name="credentials"/>
+       <attributes>
+        <entry name="name">
+         <value-info length="28" start="394" value="credentials"/>
+        </entry>
+        <entry name="org.jboss.seam.annotations.In">
+         <value-info length="3" start="394" value="org.jboss.seam.annotations.In"/>
+        </entry>
+       </attributes>
+       <java-source class="field" name="credentials"/>
+      </bijected-attribute>
+     </bijected>
+    </component>
+   </components>
+  </path>
+ </paths>
+</seam-project>

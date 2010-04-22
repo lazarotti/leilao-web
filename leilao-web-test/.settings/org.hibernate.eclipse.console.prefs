@@ -1,0 +1,4 @@
+#Thu Apr 22 16:54:35 GMT-03:00 2010
+default.configuration=leilao-web-ejb
+eclipse.preferences.version=1
+hibernate3.enabled=true

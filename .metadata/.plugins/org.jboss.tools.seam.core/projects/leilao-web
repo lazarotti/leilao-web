@@ -1,0 +1,2912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<seam-project>
+ <depends-on-projects>
+  <project name="leilao-web-ejb"/>
+ </depends-on-projects>
+ <used-by-projects>
+  <project name="leilao-web-test"/>
+ </used-by-projects>
+ <namespaces>
+  <namespace package="org.jboss.seam.theme"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/theme"/>
+  <namespace package="org.jboss.seam.document"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/document"/>
+  <namespace package="org.jboss.seam.drools"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/drools"/>
+  <namespace package="org.jboss.seam.international"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/international"/>
+  <namespace package="org.jboss.seam.navigation"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/navigation"/>
+  <namespace package="org.jboss.seam.web"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/web"/>
+  <namespace package="org.jboss.seam.async"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/async"/>
+  <namespace package="org.jboss.seam.cache"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/cache"/>
+  <namespace package="org.jboss.seam.remoting"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/jboss-seam-remoting.jar" uri="http://jboss.com/products/seam/remoting"/>
+  <namespace package="org.jboss.seam.ui"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-ui.jar" uri="http://jboss.com/products/seam/ui"/>
+  <namespace package="org.jboss.seam.core"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/core"/>
+  <namespace package="org.jboss.seam.security"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.security.management"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.security.permission"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/security"/>
+  <namespace package="org.jboss.seam.jms"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/jms"/>
+  <namespace package="org.jboss.seam.captcha"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/captcha"/>
+  <namespace package="org.jboss.seam.excel"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-excel.jar" uri="http://jboss.com/products/seam/excel"/>
+  <namespace package="org.jboss.seam.ioc.spring"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-ioc.jar" uri="http://jboss.com/products/seam/spring"/>
+  <namespace package="org.jboss.seam.transaction"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/transaction"/>
+  <namespace package="org.jboss.seam.bpm"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/bpm"/>
+  <namespace package="org.jboss.seam.framework"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/framework"/>
+  <namespace package="org.jboss.seam.mail"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/mail"/>
+  <namespace package="org.jboss.seam.persistence"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/persistence"/>
+  <namespace package="org.jboss.seam.pdf"
+   path="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-pdf.jar" uri="http://jboss.com/products/seam/pdf"/>
+ </namespaces>
+ <paths>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-security-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/mysql-connector-java-5.1.12-bin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-client-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-vfs.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/joesnmp.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-common-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-remoting-aspects.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-monitoring.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/trove.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ha-legacy-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-logmanager.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/wstx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-ext-api-impl.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jcommon.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-xml-binding.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-common-jdbc-wrapper.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-common.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/slf4j-jboss-logging.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/getopt.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop-asintegration-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-logging-jdk.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-appclient.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jnpserver.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-vfs-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-core-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-management.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/mvel2.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/properties-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/autonumber-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-validator.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-ioc.jar">
+   <components>
+    <component class="java"
+     name="org.jboss.seam.ioc.spring.contextLoader" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ioc.spring.ContextLoader"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ioc.spring.springELResolver" precedence="10" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ioc.spring.SpringELResolver"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initialize" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ioc.spring.SpringTaskExecutorDispatcher"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ioc.spring.SpringTransaction"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="cleanupCurrentTransaction" params=""/>
+      </method>
+     </methods>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/log4j.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-kernel.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-remoting.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/javassist.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-jaxws-ext.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/wstx.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/commons-digester.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossxacml.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-transactions.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/jbpm-jpdl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deployers/jboss-aop-jboss5.deployer/jboss-aop-aspects.jar"/>
+  <path value="/usr/java/jdk1.6.0_17/jre/lib/ext/localedata.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-xml-binding.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deployers/jboss-aop-jboss5.deployer/jboss-aspect-library.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-bootstrap.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-security-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-timerservice-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/concurrent.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-common-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-framework.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossha.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/jboss-seam-remoting.jar">
+   <components>
+    <component class="java"
+     name="org.jboss.seam.remoting.messaging.subscriptionRegistry"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.remoting.messaging.SubscriptionRegistry"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.messaging.SubscriptionRegistry.userTokens"
+     precedence="20" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.remoting.messaging.UserTokens"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="cleanUp" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.remoting.remoting"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.remoting.Remoting"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.gwt.gwtRemoteService" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.remoting.gwt.GWT14Service"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.remoting.gwt.gwtToSeamAdapter" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.remoting.gwt.GWTToSeamAdapter"/>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-transaction-aspects.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/cglib.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-cache.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/scout.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deploy/jbossweb.sar/jsf-libs/jsf-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-threads.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-security.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-serialization.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jaxen.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jacorb.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/scheduler-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/log4j.jar"/>
+  <path value="/leilao-web/src/br/com/redhat/leilaoweb/dominio/entidade/SubCategoria.java">
+   <components>
+    <component class="java" name="subCategoria" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="br.com.redhat.leilaoweb.dominio.entidade.SubCategoria"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="14" start="290" value="subCategoria"/>
+      </entry>
+     </attributes>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info length="7" start="276" value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-javaee.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-logging-log4j.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-jmx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-jboss50.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/stax-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-aspect-jdk50-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/log4j-boot.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/xmlsec.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-profileservice.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-logging-log4j.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/activation.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-common-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-jsr77.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-ext-api-impl.jar"/>
+  <path value="/leilao-web/WebContent/WEB-INF/components.xml">
+   <components>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.core.init">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.core.init" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="distributable">
+      <id class="string" value="distributable"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;distributable" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="distributable" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="interceptors">
+      <id class="model-object" path="/interceptors" project="leilao-web"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value class="list">
+       <id class="model-object" path="." project="leilao-web"/>
+      </value>
+     </property>
+     <property name="securityEnabled">
+      <id class="string" value="security-enabled"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;security-enabled" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="security-enabled" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="debug">
+      <id class="string" value="debug"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;debug" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="debug" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="jndiPattern">
+      <id class="string" value="jndi-pattern"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;jndi-pattern" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="jndi-pattern" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="transactionManagementEnabled">
+      <id class="string" value="transaction-management-enabled"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;transaction-management-enabled" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="transaction-management-enabled" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="userTransactionName">
+      <id class="string" value="user-transaction-name"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;user-transaction-name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="user-transaction-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.core.manager">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.core.manager" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="defaultFlushMode">
+      <id class="string" value="default-flush-mode"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;default-flush-mode" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="default-flush-mode" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="parentConversationIdParameter">
+      <id class="string" value="parent-conversation-id-parameter"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;parent-conversation-id-parameter" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="parent-conversation-id-parameter" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="uriEncoding">
+      <id class="string" value="uri-encoding"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;uri-encoding" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="uri-encoding" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="conversationTimeout">
+      <id class="string" value="conversation-timeout"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;conversation-timeout" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="conversation-timeout" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="conversationIdParameter">
+      <id class="string" value="conversation-id-parameter"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;conversation-id-parameter" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="conversation-id-parameter" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="concurrentRequestTimeout">
+      <id class="string" value="concurrent-request-timeout"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;concurrent-request-timeout" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="concurrent-request-timeout" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.web.hotDeployFilter">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.web.hotDeployFilter" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="urlPattern">
+      <id class="string" value="url-pattern"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;url-pattern" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="url-pattern" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="regexUrlPattern">
+      <id class="string" value="regex-url-pattern"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;regex-url-pattern" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="regex-url-pattern" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="disabled">
+      <id class="string" value="disabled"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;disabled" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="disabled" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="entityManager">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/entityManager" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="persistenceUnitJndiName">
+      <id class="string" value="persistence-unit-jndi-name"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;persistence-unit-jndi-name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="persistence-unit-jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="entityManagerFactory">
+      <id class="string" value="entity-manager-factory"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;entity-manager-factory" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="entity-manager-factory" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="filters">
+      <id class="model-object" path="/filters" project="leilao-web"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value class="list">
+       <id class="model-object" path="." project="leilao-web"/>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="securityRules">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/securityRules" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="dslFile">
+      <id class="string" value="dsl-file"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;dsl-file" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="dsl-file" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="consequenceExceptionHandler">
+      <id class="string" value="consequence-exception-handler"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;consequence-exception-handler" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="consequence-exception-handler" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="ruleFiles">
+      <id class="model-object" path="/rule-files" project="leilao-web"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value class="list">
+       <id class="model-object" path="." project="leilao-web"/>
+       <value>
+        <id class="model-object" path="/#security.drl" project="leilao-web"/>
+        <value-info attr="value" class="xml">
+         <object class="model-object" path="/#security.drl" project="leilao-web"/>
+        </value-info>
+       </value>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.security.ruleBasedPermissionResolver">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.security.ruleBasedPermissionResolver" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="securityRules">
+      <id class="string" value="security-rules"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;security-rules" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="security-rules" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.security.identity">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.security.identity" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="authenticateMethod">
+      <id class="string" value="authenticate-method"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;authenticate-method" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="authenticate-method" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="jaasConfigName">
+      <id class="string" value="jaas-config-name"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;jaas-config-name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="jaas-config-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="rememberMe">
+      <id class="string" value="remember-me"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;remember-me" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="remember-me" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.mail.mailSession">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/components.xml/org.jboss.seam.mail.mailSession" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="port">
+      <id class="string" value="port"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;port" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="port" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="username">
+      <id class="string" value="username"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;username" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="username" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="host">
+      <id class="string" value="host"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;host" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="host" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="tls">
+      <id class="string" value="tls"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;tls" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="tls" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="sessionJndiName">
+      <id class="string" value="session-jndi-name"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;session-jndi-name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="session-jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="ssl">
+      <id class="string" value="ssl"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;ssl" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="ssl" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="debug">
+      <id class="string" value="debug"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;debug" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="debug" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+     <property name="password">
+      <id class="string" value="password"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="&amp;password" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value>
+       <id class="string" value="value"/>
+       <value-info attr="password" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </value>
+     </property>
+    </component>
+   </components>
+  </path>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/jboss-el.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-proxy-clustered-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossjts-jacorb.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jettison.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-j2se.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-framework.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossjmx-ant.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-debug.jar">
+   <components>
+    <component class="java" name="org.jboss.seam.debug.contexts"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.debug.Contexts"/>
+    </component>
+    <component class="java" name="org.jboss.seam.debug.introspector"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.jboss.seam.debug.Introspector"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.debug.jsf.debugRedirect" precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.jboss.seam.debug.jsf.DebugRedirect"/>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbosssx-server.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop-asintegration-jmx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/hibernate-validator.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/bcel.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deploy/jbossweb.sar/jboss-web-service.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-classloading.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/bsh.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/logkit.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/commons-collections.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-jmx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-metadata.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-vfs.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-commons-annotations.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-aop-client.jar"/>
+  <path value="/opt/javaapps/xseam/xseam-0.7.2.jar">
+   <components>
+    <component class="java" name="org.xseam.selecItemsCity"
+     precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web" type="org.xseam.framework.SelectItemsCity"/>
+    </component>
+    <component class="java" name="xSeamExcelExporter" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.xseam.framework.XSeamExcelExporter"/>
+    </component>
+    <component class="java" name="org.xseam.selecItemsStates"
+     precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.xseam.framework.SelectItemsState"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getUfs" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.xseam.emptyValueToNullConverter"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.xseam.converter.EmptyValueToNullConverter"/>
+    </component>
+    <component class="java" name="org.xseam.cityConverter"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.xseam.converter.CityConverter"/>
+    </component>
+    <component class="java" name="org.xseam.stateConverter"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.xseam.converter.StateConverter"/>
+    </component>
+    <component class="java" name="org.xseam.filter.resourceFilter"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.xseam.filter.ResourceFilter"/>
+    </component>
+    <component class="xml" isClassNameGuessed="true" name="org.jboss.seam.core.resourceLoader">
+     <id class="model-object"
+      path="FileSystems/lib-xseam-0.7.2.jar/META-INF/components.xml/org.jboss.seam.core.resourceLoader" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="jndi-name">
+       <value-info attr="jndi-name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="auto-create">
+       <value-info attr="auto-create" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+     <property name="bundleNames">
+      <id class="model-object" path="/bundle-names" project="leilao-web"/>
+      <attributes>
+       <entry name="name">
+        <value-info attr="name" class="xml">
+         <object class="model-object" path="." project="leilao-web"/>
+        </value-info>
+       </entry>
+      </attributes>
+      <value class="list">
+       <id class="model-object" path="." project="leilao-web"/>
+       <value>
+        <id class="model-object" path="/xseamMessages" project="leilao-web"/>
+        <value-info attr="value" class="xml">
+         <object class="model-object" path="/xseamMessages" project="leilao-web"/>
+        </value-info>
+       </value>
+       <value>
+        <id class="model-object" path="/messages" project="leilao-web"/>
+        <value-info attr="value" class="xml">
+         <object class="model-object" path="/messages" project="leilao-web"/>
+        </value-info>
+       </value>
+      </value>
+     </property>
+    </component>
+   </components>
+   <imports>
+    <import value="org.xseam"/>
+   </imports>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-profileservice-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/mail.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jmx-invoker-adaptor-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-integration.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jaxb-xjc.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/hibernate-annotations.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-server-cache-jbc.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/drools-compiler.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-jaxrpc.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/slf4j-jboss-logging.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-saaj.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/antlr.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-ext-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-saaj.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-logging-jdk.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-negotiation.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/trove.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-proxy-impl-client.jar"/>
+  <path value="/leilao-web/src/br/com/redhat/leilaoweb/dominio/entidade/Item.java">
+   <components>
+    <component class="java" name="item" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="br.com.redhat.leilaoweb.dominio.entidade.Item"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="6" start="424" value="item"/>
+      </entry>
+     </attributes>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info length="7" start="410" value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-core-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deploy/jbossweb.sar/jstl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbosssx-as-client.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/drools-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-ext-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deploy/jbossweb.sar/jsf-libs/jsf-impl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ha-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/slf4j-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-serialization.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deployers/ejb3.deployer/jboss-ejb3-deployer.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-srp-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-interceptors.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-impl.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-ui.jar">
+   <components>
+    <component class="java" name="org.jboss.seam.ui.entityLoader"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.HibernateEntityLoader"/>
+    </component>
+    <component class="java" name="org.jboss.seam.ui.entityLoader"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.JpaEntityLoader"/>
+    </component>
+    <component class="java" name="org.jboss.seam.ui.renderStampStore"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.RenderStampStore"/>
+    </component>
+    <component class="java" name="org.jboss.seam.ui.EntityConverter"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.EntityConverter"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.entityIdentifierStore" precedence="0" scope="PAGE">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.EntityIdentifierStore"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.ui.clientUidSelector"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.ClientUidSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="onCreate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.graphicImage.image"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.graphicImage.Image"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.graphicImage.graphicImageResource"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.graphicImage.GraphicImageResource"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.graphicImage.graphicImageStore"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.graphicImage.GraphicImageStore"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.web.ajax4jsfFilterInstantiator"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.filter.Ajax4jsfFilterInstantiator"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.resource.webResource" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.resource.WebResource"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.facelet.faceletCompiler" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.facelet.FaceletCompiler"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="unwrap" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.renderer"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.facelet.FaceletsRenderer"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.facelet.mockHttpSession" precedence="20" scope="SESSION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.facelet.HttpSessionManager"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.facelet.mockServletContext" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.facelet.ServletContextManager"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getServletContext" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.ui.facelet.facesContextFactory"
+     precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.ui.facelet.RendererFacesContextFactory"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/mail-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/stax-ex.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-classloading-spi.jar"/>
+  <path value="/usr/java/jdk1.6.0_17/jre/lib/ext/sunjce_provider.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deployers/jboss-aop-jboss5.deployer/pluggable-instrumentor.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossas-remoting.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-logging-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/log4j-snmp-appender.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-mdr.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/servlet-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hsqldb.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/bsf.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-endpoint.jar"/>
+  <path value="/usr/java/jdk1.6.0_17/jre/lib/ext/dnsns.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/lib/hsqldb.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-jaxrpc.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-dependency.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/el-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-vfs.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/commons-logging.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-mbeans.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/asm.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-javaee.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/richfaces-ui.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/ejb3-persistence.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-common.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossjts-integration.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jaxb-impl.jar"/>
+  <path value="/leilao-web/src/br/com/redhat/leilaoweb/dominio/entidade/Usuario.java">
+   <components>
+    <component class="java" name="usuario" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="br.com.redhat.leilaoweb.dominio.entidade.Usuario"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="9" start="375" value="usuario"/>
+      </entry>
+     </attributes>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info length="7" start="361" value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jaxb-impl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbosssx-client.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/drools-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/slf4j-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-messaging-int.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/commons-logging.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-metatype.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-jaspi-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-reflect.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossts-common.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-profileservice-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/scheduler-plugin-example.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/jboss-seam.jar">
+   <components>
+    <component class="java"
+     name="org.jboss.seam.transaction.synchronizations" precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.EjbSynchronizations"/>
+     <bean-types>
+      <bean-type name="STATEFUL">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+     <methods>
+      <method comp-types="REMOVE;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.ejbTransaction" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.EjbTransaction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.EntityTransaction"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="validate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.facesTransactionEvents"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.FacesTransactionEvents"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addTransactionFailedMessage" params="I,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.HibernateTransaction"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="validate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.NoTransaction"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.RollbackInterceptor"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.synchronizations" precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.SeSynchronizations"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.transaction.transaction" precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.Transaction"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTransaction" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.transaction.TransactionInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.BijectionInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.contexts"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.conversation"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Conversation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationEntries" precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationEntries"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.ConversationIdGenerator" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationIdGenerator"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationInterceptor"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationListFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationList"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationPropagation" precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationPropagation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.core.conversationStackFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationStack"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationalInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.EventInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.events"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Events"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.expressions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Expressions"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.init"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Init"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.interpolator"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Interpolator"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.manager"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Manager"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.MethodContextInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceBundle"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ResourceBundle"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getResourceBundle" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceLoader"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.ResourceLoader"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.SynchronizationInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.validators"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.core.Validators"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.ejb.RemoveInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.dataModels"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.DataModels"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.dateConverter"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.DateConverter"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.facesContext"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.FacesContext"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getContext" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.expressions"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.FacesExpressions"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.manager"
+     precedence="10" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.FacesManager"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.statusMessages" precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.FacesMessages"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.facesPage"
+     precedence="0" scope="PAGE">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.FacesPage"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.httpError"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.HttpError"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.isUserInRole"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.IsUserInRole"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.parameters"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.Parameters"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.redirect"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.Redirect"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.renderer"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.Renderer"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.resourceLoader"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.ResourceLoader"/>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.switcher"
+     precedence="0" scope="PAGE">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.Switcher"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="createSelectItems" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.uiComponent"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.UiComponent"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getViewComponents" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.userPrincipal"
+     precedence="10" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.UserPrincipal"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getUserPrincipal" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.faces.validation"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.faces.Validation"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.identifierPolicy" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.IdentifierPolicy"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.jpaPermissionStore" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.JpaPermissionStore"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permissionManager" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.PermissionManager"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permissionMapper" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.PermissionMapper"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.persistentPermissionResolver"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.PersistentPermissionResolver"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.ResolverChain"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.ruleBasedPermissionResolver"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.RuleBasedPermissionResolver"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="setUserAccountInSecurityContext" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="unAuthenticate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.ManagedQueueSender"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueSender" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.ManagedTopicPublisher"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicPublisher" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.queueConnection"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.QueueConnection"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueConnection" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.queueSession"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.QueueSession"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.topicConnection"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.TopicConnection"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicConnection" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.jms.topicSession"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.TopicSession"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTopicSession" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.navigation.pages"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.navigation.Pages"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.navigation.safeActions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.navigation.SafeActions"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.Component"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.webservice.WSSecurityInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.theme.themeFactory"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.theme.Theme"/>
+    </component>
+    <component class="java" name="org.jboss.seam.theme.themeSelector"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.theme.ThemeSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initDefaultTheme" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.async.asynchronousExceptionHandler"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.AsynchronousExceptionHandler"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.AsynchronousInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.QuartzDispatcher"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="initScheduler" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.ThreadPoolDispatcher"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.async.dispatcher"
+     precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.TimerServiceDispatcher"/>
+     <bean-types>
+      <bean-type name="STATELESS">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.roleAction" precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.action.RoleAction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.roleSearch" precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.action.RoleSearch"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.userAction" precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.action.UserAction"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.management.userSearch" precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.action.UserSearch"/>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.localeConfig" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.LocaleConfig"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initLocaleConfig" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.localeSelector" precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.LocaleSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.messagesFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.Messages"/>
+    </component>
+    <component class="java" name="org.jboss.seam.international.timeZone"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.TimeZone"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTimeZone" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.timeZoneSelector" precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.TimeZoneSelector"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initTimeZone" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.international.timeZones" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.TimeZones"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTimeZones" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.cache.EhCacheProvider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.cache.JbossCache2Provider"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.cache.JbossCacheProvider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.cache.cacheProvider"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.cache.JbossPojoCacheProvider"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.jmx.jbossClusterMonitor" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jmx.JBossClusterMonitor"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.EntityManagerFactory"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getEntityManagerFactory" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.EntityManagerProxyInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.Filter"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceProvider"
+     precedence="10" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.HibernatePersistenceProvider"/>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.HibernateSessionFactory"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSessionFactory" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.HibernateSessionProxyInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.ManagedEntityInterceptor"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.ManagedHibernateSession"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.ManagedPersistenceContext"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getEntityManager" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceContexts"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.PersistenceContexts"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.persistence.persistenceProvider"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.PersistenceProvider"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.openid.openid"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.openid.OpenId"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.actor"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.Actor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.businessProcess"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.BusinessProcess"/>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.BusinessProcessInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.jbpm"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.Jbpm"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.jbpmContext"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.ManagedJbpmContext"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getJbpmContext" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.pooledTask"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.PooledTask"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.pooledTaskInstanceList" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.PooledTaskInstanceList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getPooledTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.processInstance"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.ProcessInstance"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getProcessInstance" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.processInstanceFinder" precedence="0" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.taskInstance"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.TaskInstance"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstance" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.taskInstanceList"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.TaskInstanceList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.taskInstanceListForType" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.TaskInstanceListForType"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.bpm.taskInstancePriorityList" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.TaskInstancePriorityList"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getTaskInstanceList" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.bpm.transition"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.Transition"/>
+    </component>
+    <component class="java" name="org.jboss.seam.captcha.captcha"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.captcha.Captcha"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.captcha.captchaImage"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.captcha.CaptchaImage"/>
+    </component>
+    <component class="java" name="org.jboss.seam.pageflow.pageflow"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.pageflow.Pageflow"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.ajax4jsfFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.Ajax4jsfFilter"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.web.authenticationFilter" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.AuthenticationFilter"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.servlet.characterEncodingFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.CharacterEncodingFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.contextFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.ContextFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.exceptionFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.ExceptionFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.hotDeployFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.HotDeployFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.identityFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.IdentityFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.isUserInRole"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.IsUserInRole"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getMap" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.core.locale"
+     precedence="9" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.Locale"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getLocale" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.loggingFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.LoggingFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.multipartFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.MultipartFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.parameters"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.Parameters"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.redirectFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.RedirectFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.rewriteFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.RewriteFilter"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.servletContexts"
+     precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.ServletContexts"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.session"
+     precedence="20" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.Session"/>
+    </component>
+    <component class="java" name="org.jboss.seam.web.userPrincipal"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.UserPrincipal"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getUserPrincipal" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.web.wicketFilter"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.web.WicketFilter"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="postReInitialization" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.el.referenceCache"
+     precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.el.JBossELReferenceCache"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="start" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="stop" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.mail.mailSession"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.mail.MailSession"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.document.documentStore"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.document.DocumentStore"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.drools.ManagedWorkingMemory"/>
+     <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getStatefulSession" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.drools.RuleAgent"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="createAgent" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getRuleBase" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.drools.RuleBase"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getRuleBase" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="compileRuleBase" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.drools.spreadsheetComponent" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.drools.SpreadsheetCompiler"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.permission.permissionSearch"
+     precedence="0" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.action.PermissionSearch"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.configurationFactory" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.Configuration"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.credentials"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.Credentials"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.entityPermissionChecker"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.EntityPermissionChecker"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.facesSecurityEvents" precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.FacesSecurityEvents"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addNotLoggedInMessage" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addAlreadyLoggedInMessage" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addLoginFailedMessage" params="Ljavax.security.auth.login.LoginException;,"/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="postAuthenticate" params="Lorg.jboss.seam.security.Identity;,"/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="addLoginSuccessfulMessage" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identity"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.Identity"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.tokenStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.JpaTokenStore"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.rememberMe"
+     precedence="0" scope="SESSION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.RememberMe"/>
+     <methods>
+      <method comp-types="OBSERVER;"/>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="quietLogin" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="loggedOut" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="credentialsUpdated" params=""/>
+      </method>
+      <method comp-types="OBSERVER;"/>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.SecurityInterceptor"/>
+    </component>
+    <component class="java" name="org.jboss.seam.mock.mockSecureEntity"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.mock.MockSecureEntity"/>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+    <component class="java" name="org.jboss.seam.framework.currentDate"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.framework.CurrentDate"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentDate" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.framework.currentDatetime" precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.framework.CurrentDatetime"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentDatetime" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.framework.currentTime"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.framework.CurrentTime"/>
+     <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getCurrentTime" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.framework.EntityNotFoundException"/>
+    </component>
+    <component class="java" precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.framework.Home"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.security.identityManager" precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.IdentityManager"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identityStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.JpaIdentityStore"/>
+     <methods>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="setUserAccountForSession" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
+      </method>
+     </methods>
+    </component>
+    <component class="java" name="org.jboss.seam.security.identityStore"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.LdapIdentityStore"/>
+    </component>
+    <component class="java" name="org.jboss.seam.security.passwordHash"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.management.PasswordHash"/>
+    </component>
+    <component class="java" name="org.jboss.seam.exception.exceptions"
+     precedence="0" scope="APPLICATION">
+     <id class="type" project="leilao-web-ejb" type="org.jboss.seam.exception.Exceptions"/>
+     <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="initialize" params=""/>
+      </method>
+     </methods>
+    </component>
+   </components>
+   <factories>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.eventContext">
+     <id class="method" name="getEventContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getEventContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.methodContext">
+     <id class="method" name="getMethodContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getMethodContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.pageContext">
+     <id class="method" name="getPageContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getPageContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.sessionContext">
+     <id class="method" name="getSessionContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getSessionContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.applicationContext">
+     <id class="method" name="getApplicationContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getApplicationContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.conversationContext">
+     <id class="method" name="getConversationContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getConversationContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.core.businessProcessContext">
+     <id class="method" name="getBusinessProcessContext" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+     <java-source class="method" name="getBusinessProcessContext"
+      params="" project="leilao-web-ejb" type="org.jboss.seam.core.Contexts"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.core.conversationList" scope="PAGE">
+     <id class="method" name="getConversationEntryList" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.ConversationList"/>
+     <java-source class="method" name="getConversationEntryList"
+      params="" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationList"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.core.conversationStack" scope="PAGE">
+     <id class="method" name="getConversationEntryStack" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.core.ConversationStack"/>
+     <java-source class="method" name="getConversationEntryStack"
+      params="" project="leilao-web-ejb" type="org.jboss.seam.core.ConversationStack"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.theme.theme" scope="EVENT">
+     <id class="method" name="getTheme" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.theme.Theme"/>
+     <java-source class="method" name="getTheme" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.theme.Theme"/>
+    </factory>
+    <factory auto-create="false" class="messages"
+     name="org.jboss.seam.international.messages" scope="EVENT">
+     <id class="method" name="getMessages" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.international.Messages"/>
+     <java-source class="method" name="getMessages" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.international.Messages"/>
+    </factory>
+    <factory auto-create="false" class="java" name="org.jboss.seam.bpm.processInstanceList">
+     <id class="method" name="getProcessInstanceList" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+     <java-source class="method" name="getProcessInstanceList" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.bpm.ProcessInstanceFinder"/>
+    </factory>
+    <factory auto-create="false" class="java"
+     name="org.jboss.seam.security.configuration" scope="APPLICATION">
+     <id class="method" name="getConfiguration" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.security.Configuration"/>
+     <java-source class="method" name="getConfiguration" params=""
+      project="leilao-web-ejb" type="org.jboss.seam.security.Configuration"/>
+    </factory>
+    <factory class="xml" name="org.jboss.seam.web.webSession" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/org.jboss.seam.web.webSession" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+    <factory class="xml" name="facesMessages" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/facesMessages" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+    <factory class="xml" name="org.jboss.seam.faces.facesMessages" scope="stateless">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-seam.jar/META-INF/components.xml/org.jboss.seam.faces.facesMessages" project="leilao-web"/>
+     <attributes>
+      <entry name="scope">
+       <value-info attr="scope" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="name">
+       <value-info attr="name" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="value">
+       <value-info attr="value" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+      <entry name="method">
+       <value-info attr="method" class="xml">
+        <object class="model-object" path="." project="leilao-web"/>
+       </value-info>
+      </entry>
+     </attributes>
+    </factory>
+   </factories>
+   <imports>
+    <import value="org.jboss.seam.core"/>
+    <import value="org.jboss.seam.cache"/>
+    <import value="org.jboss.seam.transaction"/>
+    <import value="org.jboss.seam.framework"/>
+    <import value="org.jboss.seam.web"/>
+    <import value="org.jboss.seam.faces"/>
+    <import value="org.jboss.seam.international"/>
+    <import value="org.jboss.seam.theme"/>
+    <import value="org.jboss.seam.pageflow"/>
+    <import value="org.jboss.seam.bpm"/>
+    <import value="org.jboss.seam.jms"/>
+    <import value="org.jboss.seam.mail"/>
+    <import value="org.jboss.seam.security"/>
+    <import value="org.jboss.seam.security.management"/>
+    <import value="org.jboss.seam.security.permission"/>
+    <import value="org.jboss.seam.security.openid"/>
+    <import value="org.jboss.seam.captcha"/>
+    <import value="org.jboss.seam.excel.exporter"/>
+   </imports>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-hibernate.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-system.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-metadata.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-jca.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jaxws-tools.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-security-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossjts.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-client-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/quartz.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/antlr-runtime.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop-asintegration-mc.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/lib/mysql-connector-java-5.1.12-bin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployment.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/mail.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jnp-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jmx-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-vfs-spi.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jxl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-remoting.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-common.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/commons-beanutils.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/getopt.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jsp-api.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jsf-facelets.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-integration.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-managed.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-metadata.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-deployers-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbosscx-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jaxws-rt.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-system-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-entitymanager.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-jsr88.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/itext.jar"/>
+  <path value="/leilao-web/src/br/com/redhat/leilaoweb/dominio/entidade/Categoria.java">
+   <components>
+    <component class="java" name="categoria" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web" type="br.com.redhat.leilaoweb.dominio.entidade.Categoria"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="11" start="342" value="categoria"/>
+      </entry>
+     </attributes>
+     <bean-types>
+      <bean-type name="ENTITY">
+       <value-info length="7" start="328" value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-jaspi-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-jaxws-ext.jar"/>
+  <path value="/usr/java/jdk1.6.0_17/jre/lib/resources.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-srp.jar"/>
+  <path value="/usr/java/jdk1.6.0_17/jre/lib/ext/sunpkcs11.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-proxy-impl.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-proxy-clustered.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/server/jbossinbossa/deploy/jbossweb.sar/jsf-libs/jboss-faces.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/xnio-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/dom4j.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-iiop.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/concurrent.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/wsdl4j.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/ejb3-persistence.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-excel.jar">
+   <components>
+    <component class="java" name="org.jboss.seam.excel.excelFactory"
+     precedence="0" scope="STATELESS">
+     <id class="type" project="leilao-web" type="org.jboss.seam.excel.ExcelFactory"/>
+    </component>
+    <component class="java"
+     name="org.jboss.seam.excel.exporter.excelExporter" precedence="0" scope="EVENT">
+     <id class="type" project="leilao-web" type="org.jboss.seam.excel.exporter.ExcelExporter"/>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-logging-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-proxy-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossjts.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/richfaces-impl.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web-ear/EarContent/lib/richfaces-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/streambuffer.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-structure-spi.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-pdf.jar">
+   <components>
+    <component class="java" name="org.jboss.seam.pdf.pdfKeyStore"
+     precedence="20" scope="APPLICATION">
+     <id class="type" project="leilao-web" type="org.jboss.seam.pdf.KeyStoreConfig"/>
+    </component>
+   </components>
+  </path>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossjts-integration.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-messaging-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop-deployers.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-jaxws.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/javassist.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jaxb-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/antlr.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jboss-seam-mail.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-mc-int.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hibernate-annotations.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-deployers.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jbosssx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/hibernate-commons-annotations.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-classloading-vfs.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/itext-rtf.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-iiop-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-classloader.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-j2se.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-aop-mc-int.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossws-native-jaxws.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossall-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-security-aspects.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jmx-adaptor-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-mdr.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jbossjts-jacorb.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-logbridge.jar"/>
+  <path value="/home/alazarot/workspaces/jbossinbossa_wk/leilao-web/WebContent/WEB-INF/lib/jfreechart.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/FastInfoset.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-jpa-deployers.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-server-api.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-deployers-core-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-system-jmx-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-ejb3-proxy-spi-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/hibernate-core.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-server-cache-spi.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-system-jmx.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/hsqldb-plugin.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-current-invocation-aspects.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/common/lib/jboss-messaging.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/client/jboss-jsr77-client.jar"/>
+  <path value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/jboss-main.jar"/>
+ </paths>
+</seam-project>

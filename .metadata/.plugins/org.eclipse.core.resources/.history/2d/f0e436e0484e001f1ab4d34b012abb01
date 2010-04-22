@@ -1,0 +1,17 @@
+#Thu Apr 22 16:54:32 GMT-03:00 2010
+action.package=br.com.redhat.leilaoweb.session
+action.sources=/leilao-web
+eclipse.preferences.version=1
+model.package=br.com.redhat.leilaoweb.entity
+model.sources=/leilao-web
+seam.ear.project=leilao-web
+seam.ejb.project=leilao-web
+seam.project.connection.profile=MySQL-LeilaoDB
+seam.project.deployment.type=ear
+seam.project.settings.version=1.1
+seam.project.web.root.folder=/leilao-web/WebContent
+seam.runtime.name=seam
+seam.test.creating=false
+seam.test.project=leilao-web
+test.package=br.com.redhat.leilaoweb.test
+test.sources=/leilao-web

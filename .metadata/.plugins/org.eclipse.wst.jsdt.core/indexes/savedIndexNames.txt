@@ -1,0 +1,2 @@
+INDEX VERSION 1.121+/home/alazarot/workspaces/jbossinbossa_wk/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1080352042.index
