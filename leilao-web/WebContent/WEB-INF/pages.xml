@@ -11,6 +11,10 @@
             <rule if-outcome="home">
                 <redirect view-id="/home.xhtml"/>
             </rule>
+            <rule if-outcome="menuProduto">
+            	<end-conversation before-redirect="true" root="true"/>
+                <redirect view-id="/cadastros/produto.xhtml"/>
+            </rule>
         </navigation>
     </page>
 
