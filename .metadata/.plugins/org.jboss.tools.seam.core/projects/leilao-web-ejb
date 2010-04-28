@@ -40,12 +40,12 @@
    path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/transaction"/>
   <namespace package="org.jboss.seam.bpm"
    path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/bpm"/>
-  <namespace package="org.jboss.seam.persistence"
-   path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/persistence"/>
   <namespace package="org.jboss.seam.framework"
    path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/framework"/>
   <namespace package="org.jboss.seam.mail"
    path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/mail"/>
+  <namespace package="org.jboss.seam.persistence"
+   path="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/jboss-seam.jar" uri="http://jboss.com/products/seam/persistence"/>
  </namespaces>
  <paths>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossha.jar"/>
@@ -60,11 +60,11 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-common-core.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-logmanager.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossas-remoting.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-main.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/wstx.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-main.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-logging-spi.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/javassist.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossjts-jacorb.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/javassist.jar"/>
   <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/entidade/Item.java">
    <components>
     <component class="java" name="item" precedence="20" scope="UNSPECIFIED">
@@ -84,9 +84,9 @@
   </path>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-deployment.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-commons-annotations.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-core.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/javassist.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-deployers-client.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/javassist.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-core.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-logging-jdk.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-deployers-vfs-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/log4j.jar"/>
@@ -404,28 +404,28 @@
      precedence="0" scope="SESSION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.permission.RuleBasedPermissionResolver"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params=""/>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="unAuthenticate" params=""/>
       </method>
       <method comp-types="OBSERVER;">
        <id class="method" name="setUserAccountInSecurityContext" params=""/>
       </method>
-      <method comp-types="OBSERVER;">
-       <id class="method" name="unAuthenticate" params=""/>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
       </method>
      </methods>
     </component>
     <component class="java" precedence="20" scope="EVENT">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.ManagedQueueSender"/>
      <methods>
-      <method comp-types="UNWRAP;">
-       <id class="method" name="getQueueSender" params=""/>
-      </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
       </method>
       <method comp-types="CREATE;">
        <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueSender" params=""/>
       </method>
      </methods>
     </component>
@@ -435,11 +435,11 @@
       <method comp-types="UNWRAP;">
        <id class="method" name="getTopicPublisher" params=""/>
       </method>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params=""/>
-      </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
       </method>
      </methods>
     </component>
@@ -447,14 +447,14 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.QueueConnection"/>
      <methods>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getQueueConnection" params=""/>
+      </method>
       <method comp-types="CREATE;">
        <id class="method" name="init" params=""/>
       </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
-      </method>
-      <method comp-types="UNWRAP;">
-       <id class="method" name="getQueueConnection" params=""/>
       </method>
      </methods>
     </component>
@@ -462,11 +462,11 @@
      precedence="0" scope="EVENT">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.QueueSession"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params=""/>
-      </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
       </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getQueueSession" params=""/>
@@ -477,14 +477,14 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.TopicConnection"/>
      <methods>
-      <method comp-types="DESTROY;">
-       <id class="method" name="destroy" params=""/>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
       </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getTopicConnection" params=""/>
       </method>
-      <method comp-types="CREATE;">
-       <id class="method" name="init" params=""/>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
       </method>
      </methods>
     </component>
@@ -492,14 +492,14 @@
      precedence="0" scope="EVENT">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.jms.TopicSession"/>
      <methods>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
+      </method>
       <method comp-types="CREATE;">
        <id class="method" name="create" params=""/>
       </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getTopicSession" params=""/>
-      </method>
-      <method comp-types="DESTROY;">
-       <id class="method" name="destroy" params=""/>
       </method>
      </methods>
     </component>
@@ -547,11 +547,11 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.QuartzDispatcher"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="initScheduler" params=""/>
-      </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="initScheduler" params=""/>
       </method>
      </methods>
     </component>
@@ -559,11 +559,11 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.async.ThreadPoolDispatcher"/>
      <methods>
-      <method comp-types="DESTROY;">
-       <id class="method" name="destroy" params=""/>
-      </method>
       <method comp-types="CREATE;">
        <id class="method" name="startup" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
       </method>
      </methods>
     </component>
@@ -645,11 +645,11 @@
      name="org.jboss.seam.international.timeZones" precedence="20" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.international.TimeZones"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="init" params=""/>
-      </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getTimeZones" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="init" params=""/>
       </method>
      </methods>
     </component>
@@ -681,11 +681,11 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.cache.JbossCacheProvider"/>
      <methods>
-      <method comp-types="DESTROY;">
-       <id class="method" name="destroy" params=""/>
-      </method>
       <method comp-types="CREATE;">
        <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="destroy" params=""/>
       </method>
      </methods>
     </component>
@@ -713,14 +713,14 @@
     <component class="java" precedence="20" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.EntityManagerFactory"/>
      <methods>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params="Lorg.jboss.seam.Component;,"/>
+      </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getEntityManagerFactory" params=""/>
       </method>
       <method comp-types="DESTROY;">
        <id class="method" name="shutdown" params=""/>
-      </method>
-      <method comp-types="CREATE;">
-       <id class="method" name="startup" params="Lorg.jboss.seam.Component;,"/>
       </method>
      </methods>
     </component>
@@ -743,14 +743,14 @@
     <component class="java" precedence="20" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.persistence.HibernateSessionFactory"/>
      <methods>
-      <method comp-types="DESTROY;">
-       <id class="method" name="shutdown" params=""/>
-      </method>
       <method comp-types="CREATE;">
        <id class="method" name="startup" params=""/>
       </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getSessionFactory" params=""/>
+      </method>
+      <method comp-types="DESTROY;">
+       <id class="method" name="shutdown" params=""/>
       </method>
      </methods>
     </component>
@@ -780,11 +780,11 @@
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
       </method>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
-      </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getEntityManager" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params="Lorg.jboss.seam.Component;,"/>
       </method>
      </methods>
     </component>
@@ -827,11 +827,11 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.Jbpm"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="startup" params=""/>
-      </method>
       <method comp-types="DESTROY;">
        <id class="method" name="shutdown" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="startup" params=""/>
       </method>
      </methods>
     </component>
@@ -839,14 +839,14 @@
      precedence="0" scope="EVENT">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.bpm.ManagedJbpmContext"/>
      <methods>
-      <method comp-types="UNWRAP;">
-       <id class="method" name="getJbpmContext" params=""/>
-      </method>
       <method comp-types="CREATE;">
        <id class="method" name="create" params=""/>
       </method>
       <method comp-types="DESTROY;">
        <id class="method" name="destroy" params=""/>
+      </method>
+      <method comp-types="UNWRAP;">
+       <id class="method" name="getJbpmContext" params=""/>
       </method>
      </methods>
     </component>
@@ -1042,11 +1042,11 @@
      precedence="0" scope="APPLICATION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.mail.MailSession"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params=""/>
-      </method>
       <method comp-types="UNWRAP;">
        <id class="method" name="getSession" params=""/>
+      </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
       </method>
      </methods>
     </component>
@@ -1114,16 +1114,16 @@
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.FacesSecurityEvents"/>
      <methods>
       <method comp-types="OBSERVER;">
-       <id class="method" name="postAuthenticate" params="Lorg.jboss.seam.security.Identity;,"/>
-      </method>
-      <method comp-types="OBSERVER;">
-       <id class="method" name="addLoginFailedMessage" params="Ljavax.security.auth.login.LoginException;,"/>
+       <id class="method" name="addAlreadyLoggedInMessage" params=""/>
       </method>
       <method comp-types="OBSERVER;">
        <id class="method" name="addNotLoggedInMessage" params=""/>
       </method>
       <method comp-types="OBSERVER;">
-       <id class="method" name="addAlreadyLoggedInMessage" params=""/>
+       <id class="method" name="addLoginFailedMessage" params="Ljavax.security.auth.login.LoginException;,"/>
+      </method>
+      <method comp-types="OBSERVER;">
+       <id class="method" name="postAuthenticate" params="Lorg.jboss.seam.security.Identity;,"/>
       </method>
       <method comp-types="OBSERVER;">
        <id class="method" name="addLoginSuccessfulMessage" params=""/>
@@ -1152,20 +1152,20 @@
      precedence="0" scope="SESSION">
      <id class="type" project="leilao-web-ejb" type="org.jboss.seam.security.RememberMe"/>
      <methods>
-      <method comp-types="CREATE;">
-       <id class="method" name="create" params=""/>
-      </method>
-      <method comp-types="OBSERVER;">
-       <id class="method" name="quietLogin" params=""/>
-      </method>
-      <method comp-types="OBSERVER;"/>
       <method comp-types="OBSERVER;"/>
       <method comp-types="OBSERVER;">
        <id class="method" name="loggedOut" params=""/>
       </method>
       <method comp-types="OBSERVER;">
+       <id class="method" name="quietLogin" params=""/>
+      </method>
+      <method comp-types="OBSERVER;">
        <id class="method" name="credentialsUpdated" params=""/>
       </method>
+      <method comp-types="CREATE;">
+       <id class="method" name="create" params=""/>
+      </method>
+      <method comp-types="OBSERVER;"/>
      </methods>
     </component>
     <component class="java" precedence="20" scope="UNSPECIFIED">
@@ -1475,12 +1475,12 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-native-saaj.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-spi.jar"/>
   <path value="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/lib/drools-core.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-ext-api.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-framework.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-ext-api.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-metadata.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jaxws-tools.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jacorb.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-validator.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jacorb.jar"/>
   <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/entidade/SubCategoria.java">
    <components>
     <component class="java" name="subCategoria" precedence="20" scope="UNSPECIFIED">
@@ -1501,41 +1501,58 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/hibernate-annotations.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossxacml.jar"/>
   <path value="/java/jdk1.6.0_20/jre/lib/ext/localedata.jar"/>
+  <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/ItemDao.java">
+   <components>
+    <component class="java" name="repositorioItem" precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="br.com.redhat.leilaoweb.infraestrutura.dao.ItemDao"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="17" start="252" value="repositorioItem"/>
+      </entry>
+     </attributes>
+     <bean-types>
+      <bean-type name="STATELESS">
+       <value-info length="10" start="271" value="true"/>
+      </bean-type>
+     </bean-types>
+    </component>
+   </components>
+  </path>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjts-integration.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-native-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jaxws-rt.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/getopt.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-srp.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/asm.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-saaj.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/slf4j-api.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-saaj.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbosssx-server.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-negotiation.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/commons-logging.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-security.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jnpserver.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-aspect-jdk50-client.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-kernel.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-native-jaxrpc.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-kernel.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-proxy-impl-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-proxy-spi-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-impl.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/slf4j-jboss-logging.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-client.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/mail-plugin.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-spi.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-security-spi.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossall-client.jar"/>
   <path value="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/lib/drools-api.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossall-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-remoting.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-reflect.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-jmx.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-reflect.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-logging-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/lib/derby.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-interceptors.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jsp-api.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-profileservice.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/FastInfoset.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-profileservice.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-deployers.jar"/>
   <path value="/java/jdk1.6.0_20/jre/lib/ext/sunpkcs11.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-common-core.jar"/>
@@ -1561,6 +1578,7 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-mc-int.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-serialization.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossts-common.jar"/>
+  <path value="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/lib/commons-lang-2.4.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/xnio-api.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossjts.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ha-client.jar"/>
@@ -1625,27 +1643,6 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-monitoring.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-srp-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-vfs.jar"/>
-  <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/BaseDao.java">
-   <components>
-    <component class="java" precedence="20" scope="UNSPECIFIED">
-     <id class="type" project="leilao-web-ejb" type="br.com.redhat.leilaoweb.infraestrutura.dao.BaseDao"/>
-     <bijected>
-      <bijected-attribute attr-types="IN;" name="entityManager">
-       <id class="field" name="entityManager"/>
-       <attributes>
-        <entry name="name">
-         <value-info length="43" start="513" value="entityManager"/>
-        </entry>
-        <entry name="org.jboss.seam.annotations.In">
-         <value-info length="3" start="513" value="org.jboss.seam.annotations.In"/>
-        </entry>
-       </attributes>
-       <java-source class="field" name="entityManager"/>
-      </bijected-attribute>
-     </bijected>
-    </component>
-   </components>
-  </path>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-jca.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-proxy-impl.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/log4j-boot.jar"/>
@@ -1692,16 +1689,16 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/wsdl4j.jar"/>
   <path value="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/lib/mvel2.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/commons-logging.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-jsr77-client.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjts.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-security-aspects.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjts.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-jsr77-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/activation.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deploy/jbossweb.sar/jsf-libs/jboss-faces.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deployers/jboss-aop-jboss5.deployer/jboss-aop-aspects.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deploy/jbossweb.sar/jsf-libs/jboss-faces.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-vfs.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jaxen.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jnp-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-integration.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jnp-client.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jaxen.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-system-jmx.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-core-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ejb3-endpoint.jar"/>
@@ -1717,16 +1714,16 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjts-jacorb.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/scheduler-plugin.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/scheduler-plugin-example.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/antlr.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-system-client.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-profileservice-spi.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/antlr.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-native-jaxws.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-profileservice-spi.jar"/>
   <path value="/java/jdk1.6.0_20/jre/lib/resources.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-server-cache-jbc.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-management.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/dom4j.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-aop-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deploy/jbossweb.sar/jsf-libs/jsf-api.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-aop-client.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/dom4j.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-management.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-ha-server-cache-jbc.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-mdr.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/ejb3-persistence.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-integration.jar"/>
@@ -1734,8 +1731,8 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/log4j.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-messaging.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/slf4j-api.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjmx-ant.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-logging-log4j.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-aop-asintegration-jmx.jar"/>
   <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/entidade/Usuario.java">
@@ -1756,11 +1753,11 @@
    </components>
   </path>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-jaspi-api.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-managed.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/wstx.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-transaction-aspects.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/xmlsec.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-managed.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-deployers-core.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/xmlsec.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-transaction-aspects.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/mail.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-logging-log4j.jar"/>
   <path value="/java/jdk1.6.0_20/jre/lib/ext/dnsns.jar"/>
@@ -1809,14 +1806,16 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbosssx-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-mbeans.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-classloading-spi.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/mail.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-iiop-client.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/mail.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jbossws-common.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/hibernate-annotations.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-framework.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/bsf.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossws-framework.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/lib/mysql-connector-java-5.0.8-bin.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-core.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/concurrent.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jmx-invoker-adaptor-client.jar"/>
   <path value="/home/rafael/Projetos/Redhat/leilao-web/leilao-web-ear/EarContent/lib/xseam-0.7.3.jar">
    <components>
     <component class="java" name="org.xseam.selecItemsStates"
@@ -1860,13 +1859,13 @@
         <object class="model-object" path="." project="leilao-web-ejb"/>
        </value-info>
       </entry>
-      <entry name="installed">
-       <value-info attr="installed" class="xml">
+      <entry name="precedence">
+       <value-info attr="precedence" class="xml">
         <object class="model-object" path="." project="leilao-web-ejb"/>
        </value-info>
       </entry>
-      <entry name="precedence">
-       <value-info attr="precedence" class="xml">
+      <entry name="installed">
+       <value-info attr="installed" class="xml">
         <object class="model-object" path="." project="leilao-web-ejb"/>
        </value-info>
       </entry>
@@ -1880,6 +1879,7 @@
         <object class="model-object" path="." project="leilao-web-ejb"/>
        </value-info>
       </entry>
+      <entry name="class"/>
       <entry name="auto-create">
        <value-info attr="auto-create" class="xml">
         <object class="model-object" path="." project="leilao-web-ejb"/>
@@ -1917,14 +1917,12 @@
     <import value="org.xseam"/>
    </imports>
   </path>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jmx-invoker-adaptor-client.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/client/concurrent.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-deployers-vfs-spi.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-deployers-vfs.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-ejb3-common-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deployers/ejb3.deployer/jboss-ejb3-deployer.jar"/>
-  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-current-invocation-aspects.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/lib/hsqldb.jar"/>
+  <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-current-invocation-aspects.jar"/>
  </paths>
  <validation>
   <core/>
