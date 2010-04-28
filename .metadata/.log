@@ -13374,3 +13374,39 @@ org.eclipse.debug.core.DebugException: Terminate failed
 	at org.eclipse.wst.server.core.internal.Server$26.run(Server.java:2970)
 !SUBENTRY 1 org.eclipse.debug.core 4 5010 2010-04-28 10:10:29.181
 !MESSAGE Terminate failed
+
+!ENTRY org.eclipse.wst.common.project.facet.core 2 0 2010-04-28 10:39:46.797
+!MESSAGE More than one declaration found for action type UNINSTALL of projet facet jst.java 5.0.
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.289
+!MESSAGE NLS unused message: birt.web.category.name in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.289
+!MESSAGE NLS unused message: birt.web.project.name in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.289
+!MESSAGE NLS unused message: birt.web.project.description in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.290
+!MESSAGE NLS unused message: birt.web.actionsets.description in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.290
+!MESSAGE NLS unused message: create.birt.web.module in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.290
+!MESSAGE NLS unused message: BIRT_FACET_LABEL in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.291
+!MESSAGE NLS unused message: BIRT_FACET_DESCRIPTION in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.291
+!MESSAGE NLS unused message: JSP_New_context_type_Extension_Element.name in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.291
+!MESSAGE NLS unused message: JSP_Tag_context_type_Extension_Element.name in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.291
+!MESSAGE NLS unused message: BirtResourcesDefinition in: plugin
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-28 10:39:47.292
+!MESSAGE NLS unused message: birt.action.importruntime.name in: plugin

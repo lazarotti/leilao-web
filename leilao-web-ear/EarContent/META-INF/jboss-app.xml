@@ -6,6 +6,6 @@
 <jboss-app>
 	<module-order>strict</module-order>
 	<loader-repository>
-		seam.jboss.org:loader=leilao-web-ear.ear
+		seam.jboss.org:loader=leilao-web-ear.ear 
 	</loader-repository>
 </jboss-app>

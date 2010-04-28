@@ -1833,3 +1833,773 @@ javax.naming.NameNotFoundException: jmx not bound
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:15:13.755
 !MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:21:21.284
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:24:21.267
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:25:41.217
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:27:16.887
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:27:21.418
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:29:07.788
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:30:06.223
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:30:21.215
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:32:18.141
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:33:02.577
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:33:40.472
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:19.064
+!MESSAGE 2 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:48.895
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:49.076
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:50.997
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:51.132
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:34:51.187
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:36:36.334
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:33.258
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:38.856
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:43.628
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:43.757
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:45.424
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:45.460
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:37:45.515
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:23.005
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:50.267
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:50.464
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:54.374
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:54.591
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:40:54.869
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2010-04-28 10:47:01.720
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-28 10:47:25.879
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-28 10:47:25.924
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 10:47:28.176
+!MESSAGE Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 10:47:41.895
+!MESSAGE jmx not bound
+!STACK 0
+javax.naming.NameNotFoundException: jmx not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+	at org.jnp.server.NamingServer.lookup(NamingServer.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:255)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:233)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:142)
+	at org.jnp.server.NamingServer_Stub.lookup(Unknown Source)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:726)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16908290 2010-04-28 10:48:06.440
+!MESSAGE Server is starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2010-04-28 10:48:15.955
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2010-04-28 10:49:57.132
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-28 10:50:03.257
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:52:41.602
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-28 10:52:41.673
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 10:52:42.646
+!MESSAGE Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 10:52:54.552
+!MESSAGE jmx not bound
+!STACK 0
+javax.naming.NameNotFoundException: jmx not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+	at org.jnp.server.NamingServer.lookup(NamingServer.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:255)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:233)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:142)
+	at org.jnp.server.NamingServer_Stub.lookup(Unknown Source)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:726)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16908290 2010-04-28 10:53:17.743
+!MESSAGE Server is starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2010-04-28 10:53:30.867
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:54:09.489
+!MESSAGE 10 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:54:09.491
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:54:27.647
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:54:52.592
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:44.502
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:48.205
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:50.943
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:51.994
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:54.331
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:54.385
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:55:54.497
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:51.308
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:56.382
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:56.644
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:58.062
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:58.099
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:56:58.127
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:58:23.459
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:58:23.933
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:58:23.942
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:58:24.031
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:58:24.052
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:27.022
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:37.228
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:37.392
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:38.653
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:38.689
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 10:59:38.732
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:02.523
+!MESSAGE 3 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:06.130
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:06.469
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:07.917
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:07.967
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:02:07.991
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:03:53.976
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:04:29.336
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:04:29.451
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:04:31.562
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:04:31.753
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:04:31.772
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:05:13.412
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:06:21.444
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:06:21.942
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:06:23.233
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:06:23.268
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:06:23.507
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:08:27.237
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:09:49.679
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:09:50.638
+!MESSAGE 17 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:09:53.160
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:09:53.231
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:09:53.410
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:13:37.856
+!MESSAGE 3 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:13:45.111
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:10.018
+!MESSAGE 1 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:10.287
+!MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:23.534
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:24.127
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:25.432
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:25.556
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:14:25.576
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:17:12.209
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:17:12.495
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:17:14.337
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:17:14.464
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:17:14.507
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107755008 2010-04-28 11:17:22.061
+!MESSAGE JBossTools was unable to contact the JBoss deployment scanner in a reasonable amount of time. This step has been skipped.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107755008 2010-04-28 11:17:27.158
+!MESSAGE JBossTools was unable to contact the JBoss deployment scanner in a reasonable amount of time. This step has been skipped.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:21:11.936
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:21:21.244
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:22:52.865
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:22:53.091
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:22:54.489
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:22:54.692
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:22:54.793
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2010-04-28 11:23:03.436
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-28 11:23:54.609
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-28 11:23:54.760
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 11:23:57.671
+!MESSAGE Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 11:24:12.828
+!MESSAGE jmx not bound
+!STACK 0
+javax.naming.NameNotFoundException: jmx not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+	at org.jnp.server.NamingServer.lookup(NamingServer.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:255)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:233)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:142)
+	at org.jnp.server.NamingServer_Stub.lookup(Unknown Source)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:726)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16908290 2010-04-28 11:24:34.586
+!MESSAGE Server is starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2010-04-28 11:24:43.095
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:01.298
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:33.209
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:39.595
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:39.794
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:40.472
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:40.505
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:25:40.528
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:04.724
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:07.054
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:07.065
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:07.115
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:07.126
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:07.141
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:13.185
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:13.204
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:13.278
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:13.291
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:26:13.297
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:27:07.518
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:27:23.210
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:03.232
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:08.034
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:08.062
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:08.140
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:08.165
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:36:08.177
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:37:54.771
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:16.863
+!MESSAGE 2 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:20.104
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:20.490
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:22.063
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:22.135
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:38:22.224
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:40:05.390
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:40:05.933
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:40:05.944
+!MESSAGE 2 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:40:06.003
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:40:06.182
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:42:34.398
+!MESSAGE 2 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-28 11:42:44.012
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-28 11:42:49.731
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 11:42:51.842
+!MESSAGE Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1099 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1099 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-28 11:43:08.400
+!MESSAGE jmx not bound
+!STACK 0
+javax.naming.NameNotFoundException: jmx not bound
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:771)
+	at org.jnp.server.NamingServer.getBinding(NamingServer.java:779)
+	at org.jnp.server.NamingServer.getObject(NamingServer.java:785)
+	at org.jnp.server.NamingServer.lookup(NamingServer.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+	at sun.rmi.transport.StreamRemoteCall.exceptionReceivedFromServer(StreamRemoteCall.java:255)
+	at sun.rmi.transport.StreamRemoteCall.executeCall(StreamRemoteCall.java:233)
+	at sun.rmi.server.UnicastRef.invoke(UnicastRef.java:142)
+	at org.jnp.server.NamingServer_Stub.lookup(Unknown Source)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:726)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16908289 2010-04-28 11:44:15.304
+!MESSAGE Server is starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2010-04-28 11:44:15.667
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:46:15.585
+!MESSAGE 13 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:46:15.764
+!MESSAGE 18 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:46:16.274
+!MESSAGE 53 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:46:16.304
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 11:46:16.334
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar

@@ -133,7 +133,6 @@ INDEX VERSION 1.126+/home/rafael/Projetos/Redhat/leilao-web/.metadata/.plugins/o
 1793245238.index
 2936074687.index
 3219164078.index
-3408773329.index
 2924455223.index
 993410368.index
 1597674991.index
