@@ -10,10 +10,10 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.jboss.ide.eclipse.as.core.server.internal.launch.serverClasspathProvider"/>
 <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
-<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_17"/>
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.6.0_20"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.jboss.Main"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--configuration=jbossinbossa  -b localhost"/>
-<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dprogram.name=&quot;JBossTools: JBoss EAP 5&quot; -Xms256m -Xmx768m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.endorsed.dirs=&quot;/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/lib/endorsed&quot;"/>
-<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/opt/javaapps/servers/jboss/jboss-eap-5.0/jboss-as/bin"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="--configuration=default  -b localhost"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dprogram.name=&quot;JBossTools: JBoss EAP 5&quot; -Xms256m -Xmx768m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djava.endorsed.dirs=&quot;/java/tools/jboss-eap-5.0/jboss-as/lib/endorsed&quot;"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/java/tools/jboss-eap-5.0/jboss-as/bin"/>
 <stringAttribute key="server-id" value="JBoss EAP 5"/>
 </launchConfiguration>

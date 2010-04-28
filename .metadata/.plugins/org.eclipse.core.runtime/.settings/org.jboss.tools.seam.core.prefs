@@ -1,3 +1,5 @@
-#Thu Apr 22 15:54:28 GMT-03:00 2010
+#Tue Apr 27 17:08:10 BRT 2010
+seam.scopePresentation=label
 eclipse.preferences.version=1
-org.jboss.tools.seam.core.runtime.list=name|seam|version|2.2|homeDir|/opt/javaapps/servers/jboss/jboss-eap-5.0/seam|default|true
+org.jboss.tools.seam.core.runtime.list=name|seam|version|2.2|homeDir|/java/tools/jboss-eap-5.0/seam|default|true
+seam.packageStructure=editable

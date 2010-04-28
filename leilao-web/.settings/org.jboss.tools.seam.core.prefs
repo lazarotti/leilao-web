@@ -1,4 +1,4 @@
-#Thu Apr 22 16:54:35 GMT-03:00 2010
+#Tue Apr 27 16:48:01 BRT 2010
 action.package=br.com.redhat.leilaoweb.session
 action.sources=/leilao-web-ejb/ejbModule
 eclipse.preferences.version=1
@@ -11,6 +11,7 @@ seam.project.deployment.type=ear
 seam.project.settings.version=1.1
 seam.project.web.root.folder=/leilao-web/WebContent
 seam.runtime.name=seam
+seam.settings.changed.by.user=true
 seam.test.creating=true
 seam.test.project=leilao-web-test
 test.package=br.com.redhat.leilaoweb.test

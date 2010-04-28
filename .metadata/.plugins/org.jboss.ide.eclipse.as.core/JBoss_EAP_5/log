@@ -320,3 +320,1245 @@ javax.naming.NameNotFoundException: jmx not bound
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-22 18:26:54.337
 !MESSAGE 4 files modified in module leilao-web
+!SESSION 2010-04-27 16:16:33.874 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33751041 2010-04-27 16:19:35.199
+!MESSAGE Module /leilao-web-ear/resources/leilao-web-ds.xml published.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:19:35.294
+!MESSAGE 11 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:19:35.300
+!MESSAGE 8 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 33685508 2010-04-27 16:19:35.424
+!MESSAGE Incremental publish failed for module leilao-web
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2010-04-27 16:19:35.424
+!MESSAGE Could not delete /WEB-INF/classes/br/com/redhat/leilaoweb/servico. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2010-04-27 16:19:35.424
+!MESSAGE Could not delete /WEB-INF/classes/META-INF. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:19:35.460
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:19:35.483
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 16:19:35.548
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 16:19:36.774
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16842784 2010-04-27 16:27:03.593
+!MESSAGE 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 33816577 2010-04-27 16:27:05.696
+!MESSAGE Error adding deployment folder to deployment scanner
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.doDeploymentAddition(ServerListener.java:83)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.serverChanged(ServerListener.java:67)
+	at org.jboss.ide.eclipse.as.core.server.UnitedServerListenerManager.serverChanged(UnitedServerListenerManager.java:131)
+	at org.eclipse.wst.server.core.internal.ServerNotificationManager.broadcastChange(ServerNotificationManager.java:110)
+	at org.eclipse.wst.server.core.internal.Server.fireServerStateChangeEvent(Server.java:631)
+	at org.eclipse.wst.server.core.internal.Server.setServerState(Server.java:568)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.setServerState(ServerBehaviourDelegate.java:145)
+	at org.jboss.ide.eclipse.as.core.server.internal.DeployableServerBehavior.setServerStarted(DeployableServerBehavior.java:124)
+	at org.jboss.ide.eclipse.as.core.server.internal.PollThread.alertBehavior(PollThread.java:226)
+	at org.jboss.ide.eclipse.as.core.server.internal.PollThread.run(PollThread.java:203)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 17 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 18 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 18 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2010-04-27 16:37:36.548
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 33816577 2010-04-27 16:37:41.334
+!MESSAGE Error adding deployment folder to deployment scanner
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.doDeploymentAddition(ServerListener.java:83)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.serverChanged(ServerListener.java:67)
+	at org.jboss.ide.eclipse.as.core.server.UnitedServerListenerManager.serverChanged(UnitedServerListenerManager.java:131)
+	at org.eclipse.wst.server.core.internal.ServerNotificationManager.broadcastChange(ServerNotificationManager.java:110)
+	at org.eclipse.wst.server.core.internal.Server.fireServerStateChangeEvent(Server.java:631)
+	at org.eclipse.wst.server.core.internal.Server.setServerState(Server.java:568)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.setServerState(ServerBehaviourDelegate.java:145)
+	at org.jboss.ide.eclipse.as.core.server.internal.DeployableServerBehavior.setServerStarted(DeployableServerBehavior.java:124)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior$1.run(JBossServerBehavior.java:87)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 16 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 17 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 17 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 16:37:41.990
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 16:37:42.292
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-27 16:38:21.392
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 16:38:44.056
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 16:38:46.553
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-27 16:41:09.408
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 16:41:14.710
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 16:41:15.032
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:48:38.218
+!MESSAGE 11 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:48:38.306
+!MESSAGE 8 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:48:40.189
+!MESSAGE 54 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:48:40.308
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:48:40.338
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16842784 2010-04-27 16:48:42.788
+!MESSAGE 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 33816577 2010-04-27 16:48:42.892
+!MESSAGE Error adding deployment folder to deployment scanner
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.doDeploymentAddition(ServerListener.java:83)
+	at org.jboss.ide.eclipse.as.core.server.internal.ServerListener.serverChanged(ServerListener.java:67)
+	at org.jboss.ide.eclipse.as.core.server.UnitedServerListenerManager.serverChanged(UnitedServerListenerManager.java:131)
+	at org.eclipse.wst.server.core.internal.ServerNotificationManager.broadcastChange(ServerNotificationManager.java:110)
+	at org.eclipse.wst.server.core.internal.Server.fireServerStateChangeEvent(Server.java:631)
+	at org.eclipse.wst.server.core.internal.Server.setServerState(Server.java:568)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.setServerState(ServerBehaviourDelegate.java:145)
+	at org.jboss.ide.eclipse.as.core.server.internal.DeployableServerBehavior.setServerStarted(DeployableServerBehavior.java:124)
+	at org.jboss.ide.eclipse.as.core.server.internal.PollThread.alertBehavior(PollThread.java:226)
+	at org.jboss.ide.eclipse.as.core.server.internal.PollThread.run(PollThread.java:203)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 17 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 18 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 18 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107623936 2010-04-27 16:51:35.491
+!MESSAGE JBossTools was unable to pause the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:51:35.503
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:51:35.656
+!MESSAGE 4 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107689472 2010-04-27 16:51:35.824
+!MESSAGE JBossTools was unable to resume the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:51:35.825
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107623936 2010-04-27 16:52:25.235
+!MESSAGE JBossTools was unable to pause the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:52:25.236
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:25.266
+!MESSAGE 1 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:25.323
+!MESSAGE 1 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:25.329
+!MESSAGE 4 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107689472 2010-04-27 16:52:25.408
+!MESSAGE JBossTools was unable to resume the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:52:25.409
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107623936 2010-04-27 16:52:31.608
+!MESSAGE JBossTools was unable to pause the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:52:31.609
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:31.947
+!MESSAGE 12 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:31.954
+!MESSAGE 8 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:33.591
+!MESSAGE 54 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:33.645
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 16:52:33.675
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107689472 2010-04-27 16:52:34.262
+!MESSAGE JBossTools was unable to resume the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 16:52:34.262
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107623936 2010-04-27 17:02:57.693
+!MESSAGE JBossTools was unable to pause the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 17:02:57.753
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:02:58.297
+!MESSAGE 11 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:02:58.401
+!MESSAGE 8 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:03:00.636
+!MESSAGE 55 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:03:00.670
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:03:00.690
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107689472 2010-04-27 17:03:00.791
+!MESSAGE JBossTools was unable to resume the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 17:03:00.791
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107623936 2010-04-27 17:03:18.719
+!MESSAGE JBossTools was unable to pause the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 17:03:18.720
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishStart(JBossServerBehavior.java:201)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:847)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:03:18.733
+!MESSAGE 1 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 17:03:18.741
+!MESSAGE 4 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 1107689472 2010-04-27 17:03:18.905
+!MESSAGE JBossTools was unable to resume the JBoss deployment scanner. For optimal performance, verify your version includes an unsecured JMX RMI adaptor
+!STACK 1
+org.jboss.tools.jmx.core.JMXException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:74)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	... 9 more
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+!SUBENTRY 1 org.jboss.ide.eclipse.as.core 4 0 2010-04-27 17:03:18.906
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:52)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnection.run(JBossServerConnection.java:94)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JBossServerConnectionProvider.run(JBossServerConnectionProvider.java:51)
+	at org.jboss.ide.eclipse.as.core.server.internal.JBossServerBehavior.publishFinish(JBossServerBehavior.java:217)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:887)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:708)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:2731)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:278)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 13 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 14 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 14 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-27 17:09:13.337
+!MESSAGE Server processes have been terminated.
+!SESSION 2010-04-27 22:49:06.979 -----------------------------------------------
+eclipse.buildId=M20090917-0800
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33751041 2010-04-27 23:07:58.539
+!MESSAGE Module /leilao-web-ear/resources/leilao-web-ds.xml published.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:07:58.718
+!MESSAGE 12 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:07:58.729
+!MESSAGE 15 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:07:59.114
+!MESSAGE 51 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:07:59.127
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:07:59.152
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 23:07:59.349
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 23:08:00.411
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-27 23:10:24.392
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:11:21.684
+!MESSAGE 10 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2010-04-27 23:11:21.765
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16908288 2010-04-27 23:11:23.109
+!MESSAGE Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+!STACK 0
+javax.naming.CommunicationException: Could not obtain connection to any of these urls: localhost:1109 and discovery failed with error: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String [Root exception is javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]]
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1763)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:693)
+	at org.jnp.interfaces.NamingContext.lookup(NamingContext.java:686)
+	at javax.naming.InitialContext.lookup(InitialContext.java:392)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:67)
+	at org.jboss.ide.eclipse.as.core.extensions.jmx.JMXSafeRunner.run(JMXSafeRunner.java:46)
+	at org.jboss.ide.eclipse.as.core.extensions.polling.JMXPoller$PollerRunnable.run(JMXPoller.java:104)
+	at java.lang.Thread.run(Thread.java:619)
+Caused by: javax.naming.CommunicationException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:335)
+	at org.jnp.interfaces.NamingContext.checkRef(NamingContext.java:1734)
+	... 7 more
+Caused by: javax.naming.ServiceUnavailableException: Failed to connect to server localhost/127.0.0.1:1109 [Root exception is java.net.ConnectException: Connection refused]
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:305)
+	... 8 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:366)
+	at java.net.Socket.connect(Socket.java:529)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:97)
+	at org.jnp.interfaces.TimedSocketFactory.createSocket(TimedSocketFactory.java:82)
+	at org.jnp.interfaces.NamingContext.getServer(NamingContext.java:301)
+	... 8 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:15:11.714
+!MESSAGE 12 files modified in module leilao-web-ear
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:15:11.773
+!MESSAGE 16 files modified in module leilao-web-ejb
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:15:12.517
+!MESSAGE 51 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:15:12.556
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/jboss-seam.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-27 23:15:12.589
+!MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
