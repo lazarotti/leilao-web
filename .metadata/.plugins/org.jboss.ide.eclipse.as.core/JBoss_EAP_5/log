@@ -3513,3 +3513,6 @@ javax.naming.NameNotFoundException: jmx not bound
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 16:40:30.327
 !MESSAGE 1 files modified in module lib/leilao-web-ear/EarContent/lib/mvel2.jar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-28 16:53:10.937
+!MESSAGE 1 files modified in module leilao-web-ejb

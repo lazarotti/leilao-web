@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.xseam.model.BaseEntity"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.repositorio.Repositorio"/>
+<fullyQualifiedTypeName name="javax.ejb.Stateless"/>
+<fullyQualifiedTypeName name="javax.ejb.Local"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.entidade.Item"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.repositorio.RepositorioItem"/>
+<fullyQualifiedTypeName name="org.jboss.seam.international.StatusMessages"/>
+<fullyQualifiedTypeName name="org.jboss.seam.international.StatusMessage.Severity"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.AutoCreate"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Out"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Name"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.In"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.aplicacao.CombosEstaticos"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.repositorio.RepositorioCategoria"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.entidade.Categoria"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Startup"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Factory"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Scope"/>
+</qualifiedTypeNameHistroy>

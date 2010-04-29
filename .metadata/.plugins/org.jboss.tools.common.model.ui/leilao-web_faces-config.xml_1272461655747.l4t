@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/leilao-web/WebContent/WEB-INF/faces-config.xml">
+ <TreeFormPage>
+  <Memento type="FacesConfig12">
+   <Memento type="Factories"/>
+   <Memento type="Lifecycle"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>
