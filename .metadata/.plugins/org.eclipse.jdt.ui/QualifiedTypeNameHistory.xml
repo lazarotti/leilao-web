@@ -12,13 +12,17 @@
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.AutoCreate"/>
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.Out"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="org.jboss.seam.annotations.Name"/>
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.In"/>
 <fullyQualifiedTypeName name="br.com.redhat.leilaoweb.aplicacao.CombosEstaticos"/>
 <fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.repositorio.RepositorioCategoria"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.entidade.Categoria"/>
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.Startup"/>
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.Factory"/>
+<fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+<fullyQualifiedTypeName name="org.jboss.seam.annotations.Name"/>
 <fullyQualifiedTypeName name="org.jboss.seam.annotations.Scope"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.aplicacao.SubCategoriaManager"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.entidade.SubCategoria"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.entidade.Categoria"/>
+<fullyQualifiedTypeName name="br.com.redhat.leilaoweb.dominio.repositorio.RepositorioSubCategoria"/>
 </qualifiedTypeNameHistroy>

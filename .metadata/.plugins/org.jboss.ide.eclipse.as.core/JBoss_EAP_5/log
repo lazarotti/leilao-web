@@ -3833,3 +3833,6 @@ javax.naming.NameNotFoundException: jmx not bound
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2010-04-29 10:58:18.277
 !MESSAGE 1 files modified in module leilao-web
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2010-04-29 11:01:43.267
+!MESSAGE Server processes have been terminated.
