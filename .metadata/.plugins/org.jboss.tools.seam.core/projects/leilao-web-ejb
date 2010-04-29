@@ -1506,12 +1506,12 @@
      <id class="type" project="leilao-web-ejb" type="br.com.redhat.leilaoweb.dominio.entidade.SubCategoria"/>
      <attributes>
       <entry name="name">
-       <value-info length="14" start="290" value="subCategoria"/>
+       <value-info length="14" start="327" value="subCategoria"/>
       </entry>
      </attributes>
      <bean-types>
       <bean-type name="ENTITY">
-       <value-info length="7" start="276" value="true"/>
+       <value-info length="7" start="313" value="true"/>
       </bean-type>
      </bean-types>
     </component>
@@ -1779,6 +1779,35 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/logkit.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/common/lib/jboss-jsr88.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-dependency.jar"/>
+  <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/SubCategoriaManager.java">
+   <components>
+    <component class="java" name="subCategoriaManager" precedence="20" scope="CONVERSATION">
+     <id class="type" project="leilao-web-ejb" type="br.com.redhat.leilaoweb.aplicacao.SubCategoriaManager"/>
+     <attributes>
+      <entry name="scope">
+       <value-info length="22" start="484" value="conversation"/>
+      </entry>
+      <entry name="name">
+       <value-info length="21" start="454" value="subCategoriaManager"/>
+      </entry>
+     </attributes>
+     <bijected>
+      <bijected-attribute attr-types="IN;" name="repositorioSubCategoria">
+       <id class="field" name="repositorioSubCategoria"/>
+       <attributes>
+        <entry name="name">
+         <value-info length="61" start="621" value="repositorioSubCategoria"/>
+        </entry>
+        <entry name="org.jboss.seam.annotations.In">
+         <value-info length="3" start="621" value="org.jboss.seam.annotations.In"/>
+        </entry>
+       </attributes>
+       <java-source class="field" name="repositorioSubCategoria"/>
+      </bijected-attribute>
+     </bijected>
+    </component>
+   </components>
+  </path>
   <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/ProdutoDao.java">
    <components>
     <component class="java" name="repositorioProduto" precedence="20" scope="UNSPECIFIED">
@@ -1832,6 +1861,19 @@
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jbossjts.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/jboss-jsr77-client.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/client/activation.jar"/>
+  <path value="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/SubCategoriaDao.java">
+   <components>
+    <component class="java" name="repositorioSubCategoria"
+     precedence="20" scope="UNSPECIFIED">
+     <id class="type" project="leilao-web-ejb" type="br.com.redhat.leilaoweb.infraestrutura.dao.SubCategoriaDao"/>
+     <attributes>
+      <entry name="name">
+       <value-info length="25" start="368" value="repositorioSubCategoria"/>
+      </entry>
+     </attributes>
+    </component>
+   </components>
+  </path>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deployers/jboss-aop-jboss5.deployer/jboss-aop-aspects.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/server/default/deploy/jbossweb.sar/jsf-libs/jboss-faces.jar"/>
   <path value="/java/tools/jboss-eap-5.0/jboss-as/lib/jboss-vfs.jar"/>

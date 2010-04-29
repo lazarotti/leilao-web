@@ -37934,11 +37934,17 @@
    <linked-resource name="repositorioProduto" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
    <linked-resource declaration="true"
     name="org.jboss.seam.core.manager" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
+   <linked-resource declaration="true" name="repositorioSubCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/repositorio/RepositorioSubCategoria.java"/>
+   <linked-resource name="repositorioSubCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/SubCategoriaManager.java"/>
+   <linked-resource declaration="true" name="repositorioSubCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/BaseDao.java"/>
+   <linked-resource declaration="true" name="repositorioSubCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/repositorio/Repositorio.java"/>
+   <linked-resource declaration="true" name="repositorioSubCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/SubCategoriaDao.java"/>
    <linked-resource declaration="true" name="subCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/entidade/SubCategoria.java"/>
    <linked-resource declaration="true" name="org.jboss.seam.core.init" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
    <linked-resource declaration="true" name="authenticator" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/session/Authenticator.java"/>
    <linked-resource declaration="true"
     name="org.jboss.seam.security.identity" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
+   <linked-resource declaration="true" name="subCategoriaManager" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/SubCategoriaManager.java"/>
    <linked-resource name="identity" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/session/Authenticator.java"/>
    <linked-resource declaration="true" name="categoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/entidade/Categoria.java"/>
    <linked-resource declaration="true"
@@ -37947,8 +37953,6 @@
     name="org.jboss.seam.web.hotDeployFilter" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
    <linked-resource name="repositorioCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/CombosEstaticos.java"/>
    <linked-resource declaration="true" name="repositorioCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/repositorio/RepositorioCategoria.java"/>
-   <linked-resource declaration="true" name="repositorioCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/BaseDao.java"/>
-   <linked-resource declaration="true" name="repositorioCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/dominio/repositorio/Repositorio.java"/>
    <linked-resource declaration="true" name="repositorioCategoria" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/infraestrutura/dao/CategoriaDao.java"/>
    <linked-resource name="credentials" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/session/Authenticator.java"/>
    <linked-resource declaration="true" name="securityRules" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
@@ -37958,21 +37962,27 @@
   <el>
    <linked-el length="135" name="entityList.orderDirection" offset="328" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="99" name="entityList.orderDirection" offset="554" path="/leilao-web/WebContent/layout/sort.xhtml"/>
-   <linked-el length="18" name="protudo.nome" offset="735" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo.id" offset="2066" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="16" name="protudo.id" offset="652" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="22" name="protudo.id" offset="1677" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="30" name="protudo.id" offset="1893" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo.id" offset="1787" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="27" name="protudoManager.salvar" offset="1626" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="25" name="protudoManager" offset="2019" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="27" name="protudoManager" offset="1626" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="30" name="protudoManager" offset="1726" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="28" name="protudoManager" offset="1840" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="18" name="produto" offset="735" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="22" name="produto" offset="1917" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="30" name="produto" offset="2133" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="26" name="produto" offset="1103" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="23" name="produto" offset="849" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="21" name="produto" offset="1350" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="24" name="produto" offset="1248" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="16" name="produto" offset="652" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="78" name="produto" offset="1594" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="23" name="produto" offset="1462" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="26" name="produto" offset="2306" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="26" name="produto" offset="1699" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="26" name="produto" offset="2027" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="26" name="produto" offset="958" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="28" name="produtoManager" offset="2080" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="27" name="produtoManager" offset="1866" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="30" name="produtoManager" offset="1966" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="25" name="produtoManager" offset="2259" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="38" name="item.nome" offset="941" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
    <linked-el length="41" name="item.nome" offset="1240" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
    <linked-el length="43" name="item.nome" offset="1090" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
-   <linked-el length="30" name="protudoManager.atualizar" offset="1726" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="135" name="entityList.orderColumn" offset="328" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="99" name="entityList.orderColumn" offset="554" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="31" name="org" offset="1266" path="/leilao-web/WebContent/layout/template.xhtml"/>
@@ -38000,7 +38010,6 @@
     offset="1967" path="/leilao-web/WebContent/layout/template.xhtml"/>
    <linked-el length="13" name="required" offset="466" path="/leilao-web/WebContent/layout/edit.xhtml"/>
    <linked-el length="289" name="', nested, parent id = '" offset="1501" path="/leilao-web/WebContent/layout/template.xhtml"/>
-   <linked-el length="26" name="protudo.precoInicial" offset="958" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="21" name="comboCategorias" offset="1417" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="135" name="propertyPath" offset="328" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="99" name="propertyPath" offset="554" path="/leilao-web/WebContent/layout/sort.xhtml"/>
@@ -38008,35 +38017,17 @@
    <linked-el length="135" name="propertyLabel" offset="328" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="34" name="showGlobalMessages" offset="1089" path="/leilao-web/WebContent/layout/template.xhtml"/>
    <linked-el length="15" name="init" offset="1415" path="/leilao-web/WebContent/layout/template.xhtml"/>
-   <linked-el length="24" name="protudo" offset="1248" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo" offset="2066" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="18" name="protudo" offset="735" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="16" name="protudo" offset="652" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="23" name="protudo" offset="1462" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="22" name="protudo" offset="1677" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="30" name="protudo" offset="1893" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo" offset="1103" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="23" name="protudo" offset="849" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo" offset="958" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="21" name="protudo" offset="1350" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo" offset="1787" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="28" name="protudoManager.remover" offset="1840" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="32" name="authenticator" offset="2316" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
-   <linked-el length="21" name="protudo.dataFim" offset="1350" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="26" name="protudo.precoReserva" offset="1103" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
-   <linked-el length="24" name="protudo.dataInicio" offset="1248" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
+   <linked-el length="78" name="subCategoriaManager" offset="1594" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="31" name="org.jboss" offset="1266" path="/leilao-web/WebContent/layout/template.xhtml"/>
    <linked-el length="23" name="rememberMe" offset="1304" path="/leilao-web/WebContent/login.xhtml"/>
-   <linked-el length="23" name="protudo.descricao" offset="849" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="135" name="entityList" offset="328" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="99" name="entityList" offset="554" path="/leilao-web/WebContent/layout/sort.xhtml"/>
    <linked-el length="38" name="item" offset="941" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
    <linked-el length="41" name="item" offset="1240" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
    <linked-el length="43" name="item" offset="1090" path="/leilao-web-ejb/ejbModule/br/com/redhat/leilaoweb/aplicacao/ProdutoManager.java"/>
-   <linked-el length="25" name="protudoManager.novo" offset="2019" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="18" name="securityRules" offset="2252" path="/leilao-web/WebContent/WEB-INF/components.xml"/>
    <linked-el length="18" name="projectName" offset="305" path="/leilao-web/WebContent/layout/menu.xhtml"/>
-   <linked-el length="23" name="protudo.categoria" offset="1462" path="/leilao-web/WebContent/cadastros/produto.xhtml"/>
    <linked-el length="31" name="org.jboss.seam.version" offset="1266" path="/leilao-web/WebContent/layout/template.xhtml"/>
   </el>
  </validation>

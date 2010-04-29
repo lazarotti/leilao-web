@@ -13967,3 +13967,9 @@ Caused by: org.eclipse.emf.ecore.xmi.PackageNotFoundException: Package with uri 
 	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:255)
 	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:270)
 	... 81 more
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-29 10:29:41.112
+!MESSAGE NLS unused message: NewHibernateMappingElementsSelectionPage_select in: org.hibernate.eclipse.jdt.ui.internal.JdtUiMessages
+
+!ENTRY org.eclipse.osgi 2 1 2010-04-29 10:45:08.810
+!MESSAGE NLS unused message: FaceletPageContectAssistProcessor_NewELExpression in: org.jboss.tools.jst.jsp.messages.messages

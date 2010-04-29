@@ -15,7 +15,8 @@
 				<x:inputNumber name="precoFinal" label="Preço reserva" value="#{produto.precoReserva}" required="true" jsfConverter="javax.faces.Integer" />
 				<x:inputTextDate name="dataInicio" label="Data Início" value="#{produto.dataInicio}" required="true" />
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
-				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
+				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>
+				<x:selectOneMenu items="#{subCategoriaManager.recuperarSubCategoriasByCategoria(produto.categoria)}" name="subCategorias" value="#{produto.subCategoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
 			</rich:simpleTogglePanel>
 
 			<div class="actionButtons"><h:commandButton action="#{produtoManager.salvar}" value="Salvar" rendered="#{empty produto.id}" /> <h:commandButton action="#{produtoManager.atualizar}" value="Atualizar"

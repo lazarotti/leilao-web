@@ -2,6 +2,7 @@ package br.com.redhat.leilaoweb.dominio.entidade;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedQuery;
 
 import org.hibernate.validator.Length;
 import org.hibernate.validator.NotNull;
@@ -10,6 +11,7 @@ import org.xseam.model.BaseEntity;
 
 @Entity
 @Name("subCategoria")
+@NamedQuery(name="subCategoria.findByCategoria", query="SELECT o FROM SubCategoria o WHERE o.categoriaPai = :categoriaPai")
 public class SubCategoria extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
