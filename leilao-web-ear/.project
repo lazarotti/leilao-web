@@ -3,6 +3,7 @@
 	<name>leilao-web-ear</name>
 	<comment></comment>
 	<projects>
+		<project>leilao-web-ear-ejb</project>
 		<project>leilao-web-ejb</project>
 		<project>leilao-web</project>
 	</projects>

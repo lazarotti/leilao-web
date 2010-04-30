@@ -21,6 +21,7 @@ public class Authenticator
         //write your authentication logic here,
         //return true if the authentication was
         //successful, false otherwise
+        //comments of test
         if ("admin".equals(credentials.getUsername()))
         {
             identity.addRole("admin");

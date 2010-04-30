@@ -24,6 +24,4 @@ public class SubCategoriaManager implements Serializable {
 	public List<SubCategoria> recuperarSubCategoriasByCategoria(Categoria categoria){
 		return repositorioSubCategoria.recuperarPorCategoria(categoria);
 	}
-
-	
 }
