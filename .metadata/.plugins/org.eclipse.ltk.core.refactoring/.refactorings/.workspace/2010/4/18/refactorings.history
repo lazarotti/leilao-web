@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;EJBTest&apos;" deleteContents="true" description="Delete resource &apos;EJBTest&apos;" element1="/EJBTest" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1272396012243"/>&#x0A;<refactoring comment="Delete 8 resources" deleteContents="true" description="Delete 8 resources" element1="/MapreVida" element2="/MapreVida-ear" element3="/MapreVida-ejb" element4="/MapreVida-test" element5="/ProjetoExemplo" element6="/ProjetoExemplo-ear" element7="/ProjetoExemplo-ejb" element8="/ProjetoExemplo-test" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="8" stamp="1272396065185"/>
-</session>
