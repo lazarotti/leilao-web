@@ -1,0 +1,63 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:a="http://richfaces.org/a4j"    
+    xmlns:rich="http://richfaces.org/rich"
+    template="../layout/template.xhtml">
+
+<ui:define name="body">
+
+ <h:form id="formUsuario">
+    <rich:panel>
+        <f:facet name="header">Usuario</f:facet>
+
+
+        <s:decorate id="nomeField" template="../layout/edit.xhtml">
+            <ui:define name="label">Nome</ui:define>
+                <h:inputText id="nome"
+                       required="true"
+                           size="80"
+                      maxlength="80"
+                          value="#{usuario.nome}">
+                    <a:support event="onblur" reRender="nomeField" bypassUpdates="true" ajaxSingle="true"/>
+                </h:inputText>            
+        </s:decorate>
+
+        <s:decorate id="loginField" template="../layout/edit.xhtml">
+            <ui:define name="label">Login</ui:define>
+                <h:inputText id="login"
+                       required="true"
+                           size="80"
+                      maxlength="80"
+                          value="#{usuario.login}">
+                    <a:support event="onblur" reRender="loginField" bypassUpdates="true" ajaxSingle="true"/>
+                </h:inputText>    
+        </s:decorate>        
+
+        <div style="clear:both"/>
+        
+		<h:selectManyCheckbox id="direitos" value="#{usuario.direitos}" >
+  			<s:selectItems value="#{todosDireitos}" var="_direito" label="#{_direito.nome}"/>
+			<s:convertEntity/>  			
+		</h:selectManyCheckbox>
+		
+		<div style="clear:both"/>
+        
+    </rich:panel>
+
+    <div class="actionButtons">
+
+                 
+		<h:commandButton  value="Salvar" action="#{usuarioDao.persist}" styleClass="botao" rendered="#{!usuarioDao.isManaged()}"/>
+		<h:commandButton  value="Alterar" action="#{usuarioDao.update}" styleClass="botao" rendered="#{usuarioDao.isManaged()}"/>	
+		<h:commandButton  value="Apagar" action="#{usuarioDao.remove}" styleClass="botao" rendered="#{usuarioDao.isManaged()}"/>											
+		<s:button view="/cadastros/usuarioFiltro.xhtml" value="Voltar" styleClass="botao" style="margin-left:5px" />               
+
+    </div>
+    </h:form>
+</ui:define>
+</ui:composition>
