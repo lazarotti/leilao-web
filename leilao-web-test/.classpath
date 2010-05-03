@@ -9,7 +9,6 @@
 	<classpathentry kind="lib" path="lib/core.jar"/>
 	<classpathentry kind="lib" path="lib/thirdparty-all.jar"/>
 	<classpathentry kind="lib" path="lib/jboss-embedded-all.jar"/>
-<classpathentry kind="lib" path="/leilao-web/WebContent"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/leilao-web"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/leilao-web-ejb"/>
 	<classpathentry kind="output" path="bin"/>

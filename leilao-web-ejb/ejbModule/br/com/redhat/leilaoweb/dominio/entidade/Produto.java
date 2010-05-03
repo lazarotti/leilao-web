@@ -2,19 +2,26 @@ package br.com.redhat.leilaoweb.dominio.entidade;
 
 import java.util.Date;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.FetchMode;
 import org.hibernate.validator.Length;
 import org.hibernate.validator.Min;
 import org.hibernate.validator.NotNull;
+import org.jboss.seam.annotations.AutoCreate;
 import org.jboss.seam.annotations.Name;
 import org.xseam.model.BaseEntity;
 
+import br.com.redhat.leilaoweb.dominio.vo.Imagem;
+
 @Entity
 @Name("produto")
+@AutoCreate
 public class Produto extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
@@ -49,7 +56,10 @@ public class Produto extends BaseEntity {
 
 	@ManyToOne
 	private SubCategoria subCategoria;
-
+	
+	@Embedded
+	private Imagem imagem;
+			
 	public Categoria getCategoria() {
 		return categoria;
 	}
@@ -128,5 +138,13 @@ public class Produto extends BaseEntity {
 	
 	public void setComprador(Usuario comprador) {
 		this.comprador = comprador;
+	}
+
+	public void setImagem(Imagem imagem) {
+		this.imagem = imagem;
+	}
+
+	public Imagem getImagem() {
+		return imagem;
 	}
 }

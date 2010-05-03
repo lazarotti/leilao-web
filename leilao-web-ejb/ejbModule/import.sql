@@ -13,3 +13,7 @@ INSERT INTO Categoria (id, version, nome) VALUES (4, 1, 'Informática');
 INSERT INTO Categoria (id, version, nome) VALUES (5, 1, 'Animais');
 INSERT INTO Categoria (id, version, nome) VALUES (6, 1, 'Música');
 INSERT INTO Categoria (id, version, nome) VALUES (7, 1, 'Filme');
+
+INSERT INTO Direito (id, nome, descricao) VALUES (1, 'administrador', 'Administrador de todo o sistema');
+INSERT INTO Direito (id, nome, descricao) VALUES (2, 'comprador', 'Pode comprar produtos em leilao');
+INSERT INTO Direito (id, nome, descricao) VALUES (3, 'vendedor', 'Pode vender produtos no leilao');

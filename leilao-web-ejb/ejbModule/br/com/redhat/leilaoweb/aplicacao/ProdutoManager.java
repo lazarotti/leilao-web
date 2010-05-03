@@ -1,5 +1,6 @@
 package br.com.redhat.leilaoweb.aplicacao;
 
+import java.io.FileNotFoundException;
 import java.io.Serializable;
 
 import org.jboss.seam.ScopeType;
@@ -9,14 +10,17 @@ import org.jboss.seam.annotations.Out;
 import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.international.StatusMessages;
 import org.jboss.seam.international.StatusMessage.Severity;
+import org.richfaces.event.UploadEvent;
+import org.richfaces.model.UploadItem;
 
 import br.com.redhat.leilaoweb.dominio.entidade.Produto;
 import br.com.redhat.leilaoweb.dominio.repositorio.RepositorioProduto;
+import br.com.redhat.leilaoweb.dominio.vo.Imagem;
 
 @Name("produtoManager")
 @Scope(ScopeType.CONVERSATION)
 public class ProdutoManager implements Serializable {
-
+		
 	private static final long serialVersionUID = 1L;
 
 	@In
@@ -28,7 +32,17 @@ public class ProdutoManager implements Serializable {
 
 	@In
 	private StatusMessages statusMessages;
-
+	
+	private Imagem imagem = new Imagem();
+	
+	public void imagemUpload(UploadEvent event) throws FileNotFoundException{
+        UploadItem item = event.getUploadItem();
+        imagem.setTamanho(item.getFileSize());
+        imagem.setNome(item.getFileName());
+        imagem.setDados(item.getData());
+        produto.setImagem(imagem);
+	}
+		
 	public void salvar() {
 		repositorioProduto.armazenar(produto);
 		statusMessages.add(Severity.INFO, "Item #{item.nome} salvo com sucesso!");

@@ -1,7 +1,7 @@
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:s="http://jboss.com/products/seam/taglib" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html" xmlns:rich="http://richfaces.org/rich" xmlns:x="http://www.xseam.org" template="../layout/template.xhtml">
+	    xmlns:a="http://richfaces.org/a4j"  xmlns:h="http://java.sun.com/jsf/html" xmlns:rich="http://richfaces.org/rich" xmlns:x="http://www.xseam.org" template="../layout/template.xhtml">
 
 	<ui:define name="body">
 
@@ -17,7 +17,37 @@
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
 				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>
 				<x:selectOneMenu items="#{subCategoriaManager.recuperarSubCategoriasByCategoria(produto.categoria)}" name="subCategorias" value="#{produto.subCategoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
+
+            <rich:fileUpload fileUploadListener="#{produtoManager.imagemUpload}"
+                maxFilesQuantity="1"
+                id="upload"
+                immediateUpload="true"
+                acceptedTypes="jpg, gif, png, bmp" allowFlash="true">
+                <a:support event="onuploadcomplete" reRender="produtoImagem" />
+            </rich:fileUpload>
+
+            <rich:panel id="produtoImagem" bodyClass="info" >
+               <f:facet name="header">
+                   <h:outputText value="Imagem" />
+               </f:facet>
+                        <rich:panel bodyClass="rich-laguna-panel-no-header">
+                            <h:panelGrid columns="2">
+                            <s:graphicImage id="imagem"  value="#{produto.imagem.dados}" fileName="#{produto.imagem.nome}}">
+                            	<s:transformImageSize maintainRatio="true"  height="200"/>
+                            </s:graphicImage>
+                                <h:panelGrid columns="2">
+                                    <h:outputText value="Nome da Imagem:" />
+                                    <h:outputText value="#{produto.imagem.nome}" />
+                                    <h:outputText value="Tamanho do Arquivo (bytes):" />
+                                    <h:outputText value="#{produto.imagem.tamanho}" />
+                                </h:panelGrid>
+                            </h:panelGrid>
+                        </rich:panel>
+                </rich:panel>
+            
+                           				
 			</rich:simpleTogglePanel>
+						
 
 			<div class="actionButtons"><h:commandButton action="#{produtoManager.salvar}" value="Salvar" rendered="#{empty produto.id}" /> <h:commandButton action="#{produtoManager.atualizar}" value="Atualizar"
 				rendered="#{not empty produto.id}" /> <h:commandButton action="#{produtoManager.remover}" value="Remover" rendered="#{not empty produto.id}"
