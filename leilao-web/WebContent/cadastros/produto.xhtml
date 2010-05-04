@@ -16,7 +16,7 @@
 				<x:inputTextDate name="dataInicio" label="Data Início" value="#{produto.dataInicio}" required="true" />
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
 				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>
-				<x:selectOneMenu items="#{subCategoriaManager.recuperarSubCategoriasByCategoria(produto.categoria)}" name="subCategorias" value="#{produto.subCategoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
+				<x:selectOneMenu items="#{repositorioSubCategoria.recuperarPorCategoria(produto.categoria)}" name="subCategorias" value="#{produto.subCategoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
 
             <rich:fileUpload fileUploadListener="#{produtoManager.imagemUpload}"
                 maxFilesQuantity="1"
