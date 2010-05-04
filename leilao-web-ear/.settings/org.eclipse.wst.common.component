@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
-<wb-module deploy-name="leilao-web-ear">
-<wb-resource deploy-path="/" source-path="/EarContent"/>
-<dependent-module deploy-path="/" handle="module:/resource/leilao-web-ejb/leilao-web-ejb">
+<wb-module deploy-name="leilao-web-ear-ear">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+<dependent-module deploy-path="/" handle="module:/resource/leilao-web-ear-ejb/leilao-web-ear-ejb">
 <dependency-type>uses</dependency-type>
 </dependent-module>
-<dependent-module deploy-path="/" handle="module:/resource/leilao-web/leilao-web">
-<dependency-type>uses</dependency-type>
-</dependent-module>
+        <dependent-module archiveName="leilao-web-ejb.jar" deploy-path="/" handle="module:/resource/leilao-web-ejb/leilao-web-ejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="leilao-web.war" deploy-path="/" handle="module:/resource/leilao-web/leilao-web">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
 </wb-module>
 </project-modules>

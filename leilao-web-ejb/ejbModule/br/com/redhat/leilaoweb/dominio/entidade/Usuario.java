@@ -18,7 +18,7 @@ public class Usuario extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;
 	
-	@NotNull
+	@NotNull 
 	@Length(min=5, max=80)
 	private String nome;
 	
@@ -33,6 +33,9 @@ public class Usuario extends BaseEntity {
 	
 	@OneToMany(mappedBy="comprador")
 	private List<Produto> itensComprados = new ArrayList<Produto>();
+	
+	@OneToMany
+	private List<Direito> direitos;
 
 	public String getNome() {
 		return nome;
@@ -64,6 +67,14 @@ public class Usuario extends BaseEntity {
 
 	public List<Produto> getItensComprados() {
 		return itensComprados;
+	}
+
+	public void setDireitos(List<Direito> direitos) {
+		this.direitos = direitos;
+	}
+
+	public List<Direito> getDireitos() {
+		return direitos;
 	}
 	
 }

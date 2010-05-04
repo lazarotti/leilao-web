@@ -7,6 +7,7 @@
             xmlns:security="http://jboss.com/products/seam/security"
             xmlns:mail="http://jboss.com/products/seam/mail"
             xmlns:web="http://jboss.com/products/seam/web"
+            xmlns:framework="http://jboss.com/products/seam/framework"            
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation=
                 "http://jboss.com/products/seam/core http://jboss.com/products/seam/core-2.2.xsd
@@ -16,6 +17,7 @@
                  http://jboss.com/products/seam/security http://jboss.com/products/seam/security-2.2.xsd
                  http://jboss.com/products/seam/mail http://jboss.com/products/seam/mail-2.2.xsd
                  http://jboss.com/products/seam/web http://jboss.com/products/seam/web-2.2.xsd
+				 http://jboss.com/products/seam/framework http://jboss.com/products/seam/framework-2.2.xsd                 
                  http://jboss.com/products/seam/components http://jboss.com/products/seam/components-2.2.xsd">
 
    <core:init debug="true" jndi-pattern="@jndiPattern@"/>
@@ -27,6 +29,38 @@
 
    <!-- Make sure this URL pattern is the same as that used by the Faces Servlet -->
    <web:hot-deploy-filter url-pattern="*.seam"/>
+   
+   
+   
+   <!--  ###  CADASTRO DE USUARIO ### -->
+
+	<component auto-create="true" class="br.com.redhat.leilaoweb.dominio.entidade.Usuario"
+		name="usuarioFiltro" />
+	<framework:entity-query ejbql="from Usuario usuario"
+		entity-manager="#{entityManager}" name="usuarioFiltroQuery"
+		order="nome">
+		<framework:ejbql />
+		<framework:restrictions>
+			<value>
+				upper(usuario.nome) like
+				upper(concat('%',#{usuarioFiltro.nome},'%'))
+			</value>
+			<value>
+				upper(usuario.login) like
+				upper(concat('%',#{usuarioFiltro.login},'%'))
+			</value>						
+		</framework:restrictions>
+	</framework:entity-query>   
+	
+	<framework:entity-home entity-class="br.com.redhat.leilaoweb.dominio.entidade.Usuario" 
+	                entity-manager="#{entityManager}" name="usuarioDao" scope="event" />
+	
+	<factory name="usuario" scope="event" value="#{usuarioDao.instance}" />	
+   
+   
+   <!-- ### CADASTRO DE DIREITO ### -->
+	<framework:entity-query ejbql="from Direito direito" entity-manager="#{entityManager}" name="todosDireitos"	order="nome"/>
+		   
 
    <persistence:managed-persistence-context name="entityManager" auto-create="true"
                       persistence-unit-jndi-name="java:/leilao-webEntityManagerFactory"/>

@@ -1,0 +1,86 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:rich="http://richfaces.org/rich"
+    template="../layout/template.xhtml">
+
+<ui:define name="body">
+
+    <h:form id="usuarioFiltro" styleClass="edit">
+
+        <rich:simpleTogglePanel label="Pesquisa de Usuarios" switchType="ajax">
+
+            <s:decorate template="../layout/display.xhtml">
+                <ui:define name="label">Nome</ui:define>
+                <h:inputText id="nome" value="#{usuarioFiltro.nome}"/>
+            </s:decorate>
+
+            <s:decorate template="../layout/display.xhtml">
+                <ui:define name="label">Apelido</ui:define>
+                <h:inputText id="login" value="#{usuarioFiltro.login}"/>
+            </s:decorate>
+
+        </rich:simpleTogglePanel>
+
+        <div class="actionButtons">
+            <h:commandButton id="exibir" value="Exibir"/>
+        </div>
+
+    </h:form>
+  <h:form id="formTable">
+    <rich:panel>
+        <f:facet name="header">Resultados Encontrados</f:facet>
+    <div class="results" id="usuarioListDiv">
+
+    <h:outputText value="A procura nao encontrou nenhum resultado."
+               rendered="#{empty usuarioFiltroQuery.resultList}"/>
+
+    <rich:dataTable id="tabelaUsuario"
+                var="_usuario"
+              value="#{usuarioFiltroQuery.resultList}"
+           rendered="#{not empty usuarioFiltroQuery.resultList}">
+        <h:column>
+            <f:facet name="header">
+                <ui:include src="../layout/sort.xhtml">
+                    <ui:param name="entityList" value="#{usuarioFiltroQuery}"/>
+                    <ui:param name="propertyLabel" value="Nome"/>
+                    <ui:param name="propertyPath" value="usuario.nome"/>
+                </ui:include>
+            </f:facet>
+            <h:outputText value="#{_usuario.nome}"/>
+        </h:column>
+        <h:column>
+            <f:facet name="header">
+                <ui:include src="../layout/sort.xhtml">
+                    <ui:param name="entityList" value="#{usuarioFitroQuery}"/>
+                    <ui:param name="propertyLabel" value="Login"/>
+                    <ui:param name="propertyPath" value="usuario.login"/>
+                </ui:include>
+            </f:facet>
+            <h:outputText value="#{_usuario.login}"/>
+        </h:column>
+
+        <rich:column styleClass="action">
+            <f:facet name="header"></f:facet>            
+ 					<s:link value="Ver" view="/cadastros/usuario.seam">
+ 						<f:param  name="usuarioId" value="#{_usuario.id}" />
+ 					</s:link>            
+        </rich:column>
+    </rich:dataTable>
+    
+    <rich:datascroller for="tabelaUsuario" id="sc1" />    
+
+    </div>
+    </rich:panel>
+
+    <s:div styleClass="actionButtons">
+		<s:button view="/cadastros/usuario.xhtml" value="Criar Usuario"	styleClass="botao" />    
+    </s:div>
+</h:form>
+</ui:define>
+
+</ui:composition>
