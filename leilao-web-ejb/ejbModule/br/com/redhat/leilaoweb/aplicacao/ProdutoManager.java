@@ -14,6 +14,9 @@ import org.richfaces.event.UploadEvent;
 import org.richfaces.model.UploadItem;
 
 import br.com.redhat.leilaoweb.dominio.entidade.Produto;
+import br.com.redhat.leilaoweb.dominio.entidade.Usuario;
+import br.com.redhat.leilaoweb.dominio.exception.LanceBaixoException;
+import br.com.redhat.leilaoweb.dominio.exception.LeilaoFinalizadoException;
 import br.com.redhat.leilaoweb.dominio.repositorio.RepositorioProduto;
 import br.com.redhat.leilaoweb.dominio.vo.Imagem;
 
@@ -26,7 +29,12 @@ public class ProdutoManager implements Serializable {
 	@In
 	@Out(required=false) // remover e novo
 	private Produto produto;
-
+	
+	private double lanceInicial;
+	
+	@In
+	private Usuario usuarioLogado;
+	
 	@In
 	private RepositorioProduto repositorioProduto;
 
@@ -44,13 +52,28 @@ public class ProdutoManager implements Serializable {
 	}
 		
 	public void salvar() {
-		repositorioProduto.armazenar(produto);
-		statusMessages.add(Severity.INFO, "Item #{item.nome} salvo com sucesso!");
+		try {
+			
+			//lance inicial dado pelo proprio vendedor			
+			produto.adicionarPrimeiroLance(usuarioLogado, lanceInicial);
+			
+			repositorioProduto.armazenar(produto);
+			statusMessages.add(Severity.INFO, "Item #{item.nome} salvo com sucesso!");			
+		} catch (LeilaoFinalizadoException e) {
+			statusMessages.add(Severity.ERROR, "A data final é menor do que o dia de hoje. Tente outra data.");			
+		}
 	}
 
 	public void atualizar() {
+		try {		
+		//lance inicial dado pelo proprio vendedor			
+		produto.adicionarPrimeiroLance(usuarioLogado, lanceInicial);	
+		
 		repositorioProduto.armazenar(produto);
 		statusMessages.add(Severity.INFO, "Item #{item.nome} atualizado com sucesso!");
+		} catch (LeilaoFinalizadoException e) {
+			statusMessages.add(Severity.ERROR, "A data final é menor do que o dia de hoje. Tente outra data.");			
+		}		
 	}
 
 	public void remover() {
@@ -61,5 +84,15 @@ public class ProdutoManager implements Serializable {
 
 	public void novo() {
 		produto = null;
+	}
+	
+	//getters and setters
+
+	public void setLanceInicial(double lanceInicial) {
+		this.lanceInicial = lanceInicial;
+	}
+
+	public double getLanceInicial() {
+		return lanceInicial;
 	}
 }

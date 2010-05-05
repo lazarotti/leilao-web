@@ -36,7 +36,41 @@
                           value="#{usuario.login}">
                     <a:support event="onblur" reRender="loginField" bypassUpdates="true" ajaxSingle="true"/>
                 </h:inputText>    
-        </s:decorate>        
+        </s:decorate>
+        
+        <s:decorate id="senhaField" template="../layout/edit.xhtml">
+            <ui:define name="label">Senha</ui:define>
+                <h:inputSecret id="senha" 
+                       required="true"
+                           size="80"
+                      maxlength="80"
+                      redisplay="true"
+                          value="#{usuario.senha}">
+                    <a:support event="onblur" reRender="senhaField" bypassUpdates="true" ajaxSingle="true"/>
+                </h:inputSecret>    
+        </s:decorate> 
+        
+        <s:decorate id="emailField" template="../layout/edit.xhtml">
+            <ui:define name="label">Email</ui:define>
+                <h:inputText id="email"
+                       required="true"
+                           size="80"
+                      maxlength="80"
+                          value="#{usuario.email}">
+                    <a:support event="onblur" reRender="emailField" bypassUpdates="true" ajaxSingle="true"/>
+                </h:inputText>    
+        </s:decorate>                    
+        
+        <s:decorate id="enderecoField" template="../layout/edit.xhtml">
+            <ui:define name="label">Endereço</ui:define>
+                <h:inputText id="endereco"
+                       required="true"
+                           size="80"
+                      maxlength="80"
+                       value="#{usuario.endereco}">
+                    <a:support event="onblur" reRender="enderecoField" bypassUpdates="true" ajaxSingle="true"/>
+                </h:inputText>    
+        </s:decorate>                     
 
         <div style="clear:both"/>
         

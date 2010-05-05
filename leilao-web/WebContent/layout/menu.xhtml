@@ -7,38 +7,23 @@
     xmlns:rich="http://richfaces.org/rich">
     <rich:toolBarGroup>
         <h:outputText value="#{projectName}:"/>
-        <s:link id="menuHomeId" view="/home.xhtml" value="Home" propagation="none"/>
+        <s:link id="menuHomeId" view="/leilao/leilaoFiltro.xhtml" value="Home" propagation="end"/>
     </rich:toolBarGroup>
     <rich:dropDownMenu showDelay="250" hideDelay="0" submitMode="none">
         <f:facet name="label">Browse data</f:facet>
 	<rich:menuItem>
-    	<s:link view="/CategoriaList.xhtml"
-           	value="Categoria List"
-           	id="CategoriaId"
+    	<s:link view="/cadastros/usuarioFiltro.xhtml"
+           	value="Usuario"
 			includePageParams="false"
-     		propagation="none"/>
+     		propagation="end"/>
      </rich:menuItem>
 	<rich:menuItem>
-    	<s:link view="/SubCategoriaList.xhtml"
-           	value="SubCategoria List"
-           	id="SubCategoriaId"
+    	<s:link view="/cadastros/produto.xhtml"
+           	value="Produto"
 			includePageParams="false"
-     		propagation="none"/>
-     </rich:menuItem>
-	<rich:menuItem>
-    	<s:link view="/UsuarioList.xhtml"
-           	value="Usuario List"
-           	id="UsuarioId"
-			includePageParams="false"
-     		propagation="none"/>
-     </rich:menuItem>
-	<rich:menuItem>
-    	<s:link view="/ProdutoList.xhtml"
-           	value="Produto List"
-           	id="ProdutoId"
-			includePageParams="false"
-     		propagation="none"/>
-     </rich:menuItem>
+     		propagation="end"/>
+     </rich:menuItem>    
+     
     </rich:dropDownMenu>
     <!-- @newMenuItem@ -->
     <rich:toolBarGroup location="right">

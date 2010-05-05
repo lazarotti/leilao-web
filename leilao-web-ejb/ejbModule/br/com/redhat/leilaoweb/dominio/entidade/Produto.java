@@ -1,22 +1,29 @@
 package br.com.redhat.leilaoweb.dominio.entidade;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import static javax.persistence.EnumType.*;
+import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
-import org.hibernate.annotations.FetchMode;
 import org.hibernate.validator.Length;
-import org.hibernate.validator.Min;
 import org.hibernate.validator.NotNull;
 import org.jboss.seam.annotations.AutoCreate;
 import org.jboss.seam.annotations.Name;
 import org.xseam.model.BaseEntity;
 
+import br.com.redhat.leilaoweb.dominio.exception.LanceBaixoException;
+import br.com.redhat.leilaoweb.dominio.exception.LeilaoFinalizadoException;
 import br.com.redhat.leilaoweb.dominio.vo.Imagem;
 
 @Entity
@@ -32,12 +39,9 @@ public class Produto extends BaseEntity {
 
 	@Length(min = 3, max = 200)
 	private String descricao;
-
-	@Min(0)
-	private int precoInicial;
-
-	@Min(0)
-	private int precoReserva;
+	
+	@OneToMany(mappedBy="produto", cascade=CascadeType.ALL)
+	private List<Lance> lances = new ArrayList<Lance>();
 
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataInicio;
@@ -59,7 +63,28 @@ public class Produto extends BaseEntity {
 	
 	@Embedded
 	private Imagem imagem;
+	
+	public enum Status{
+		ATIVO("Ativo"),FINALIZADO("Finalizado");
+		private String descricao;		 
+			     private Status(String descricao) {
+			          this.descricao = descricao;
+			     }
+			     public String getDescricao() {
+			           return descricao;
+			     }
+	}
+	
+	@Enumerated(STRING)	
+	private Status status;
+	
+	@OneToOne(cascade=CascadeType.ALL)
+	private Lance lanceAtual;
 			
+	public Lance getLanceAtual() {
+		return lanceAtual;
+	}
+
 	public Categoria getCategoria() {
 		return categoria;
 	}
@@ -90,22 +115,6 @@ public class Produto extends BaseEntity {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-
-	public int getPrecoInicial() {
-		return precoInicial;
-	}
-
-	public void setPrecoInicial(int precoInicial) {
-		this.precoInicial = precoInicial;
-	}
-
-	public int getPrecoReserva() {
-		return precoReserva;
-	}
-
-	public void setPrecoReserva(int precoReserva) {
-		this.precoReserva = precoReserva;
 	}
 
 	public Date getDataInicio() {
@@ -147,4 +156,55 @@ public class Produto extends BaseEntity {
 	public Imagem getImagem() {
 		return imagem;
 	}
+
+	public void setLances(List<Lance> lances) {
+		this.lances = lances;
+	}
+
+	public List<Lance> getLances() {
+		return lances;
+	}
+	
+	public Status getStatus() {
+		return status;
+	}
+	
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	public boolean estaFinalizado(){
+		return status == Status.FINALIZADO;
+	}
+	
+	public void adicionarPrimeiroLance(Usuario usuario, double valorDolance) throws LeilaoFinalizadoException{
+		try {
+			this.vendedor = usuario;
+			adicionarLance(usuario, valorDolance);
+			this.status= Status.ATIVO;
+		} catch (LanceBaixoException e) {
+			//essa excecao nunca acontece para o primeiro lance
+		}
+	}
+	
+	public void adicionarLance(Usuario usuario, double valorDolance) throws LanceBaixoException, LeilaoFinalizadoException{		
+		if( lanceAtual != null && valorDolance < lanceAtual.getValor() ){
+			throw new LanceBaixoException();
+		}
+		
+		if(this.getDataFim().before(new Date())){
+			throw new LeilaoFinalizadoException();
+		}
+		
+		Lance  novoLance = new Lance(this,usuario,valorDolance);
+		this.lances.add(novoLance);
+		this.lanceAtual = novoLance;
+	}
+	
+	public void finalizarLeilao(){
+		this.comprador = lanceAtual.getUsuario();
+		this.status = Status.FINALIZADO;
+		this.dataFim = new Date();
+	}
+
 }

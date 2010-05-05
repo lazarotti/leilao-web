@@ -36,6 +36,7 @@
 
     <rich:dataTable id="tabelaProdutos"
                 var="_produto"
+                columnClasses=""
               value="#{repositorioProduto.buscaPorNome(produto.nome)}"
            rendered="#{not empty repositorioProduto.buscaPorNome(produto.nome)}" >
          
@@ -43,24 +44,36 @@
             <f:facet name="header">
 				Nome
             </f:facet>
-            <s:graphicImage value="#{_produto.imagem.dados}" fileName="#{_produto.imagem.nome}" style="vertical-align:middle">
-                   	<s:transformImageSize width="100"  height="100"/>
+            <s:graphicImage value="#{_produto.imagem.dados}" fileName="#{_produto.imagem.nome}" 
+            	style="vertical-align:middle;padding-right:15px">
+                <s:transformImageSize width="100"  height="100"/>
             </s:graphicImage>           
-            <h:outputText value="#{_produto.nome}"/>
+            <h:outputText value="#{_produto.nome}" style="font-size:12pt;"/>
         </h:column>
         <h:column>
             <f:facet name="header">
 				Valor
             </f:facet>
-            <h:outputText value="#{_produto.precoInicial}"/>
+            <h:outputText value="#{_produto.lanceAtual.valor}" style="width:100%;text-align:right" >
+            	<f:convertNumber type="currency" locale="pt_BR"/>
+            </h:outputText> 
         </h:column>
+        
+        <h:column>
+            <f:facet name="header">
+				Finaliza em
+            </f:facet>
+            <h:outputText value="#{_produto.dataFim}" style="width:100%;text-align:right" rendered="#{not _produto.estaFinalizado()}">
+            	<f:convertDateTime locale="pt_BR" />
+            </h:outputText>
+             <h:outputText value="Já Finalizado" rendered="#{_produto.estaFinalizado()}"/> 
+        </h:column>        
 
-        <rich:column styleClass="action">
-            <f:facet name="header"></f:facet>            
- 					<s:link value="Ver" view="/cadastros/usuario.seam">
- 						<f:param  name="usuarioId" value="#{_usuario.id}" />
- 					</s:link>            
-        </rich:column>
+        <h:column styleClass="action">
+             <h:commandLink value="Ver" action="#{leilaoManager.produtoSelecionado(_produto)}" >
+             	<s:conversationId />
+             </h:commandLink>                 
+        </h:column>
     </rich:dataTable>
     
     <rich:datascroller for="tabelaProdutos" id="sc1" />    
@@ -68,9 +81,6 @@
     </div>
     </rich:panel>
 
-    <s:div styleClass="actionButtons">
-		<s:button view="/cadastros/usuario.xhtml" value="Criar Usuario"	styleClass="botao" />    
-    </s:div>
 </h:form>
 </ui:define>
 
