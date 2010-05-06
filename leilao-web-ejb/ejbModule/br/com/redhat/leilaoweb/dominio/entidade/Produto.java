@@ -1,5 +1,7 @@
 package br.com.redhat.leilaoweb.dominio.entidade;
 
+import static javax.persistence.EnumType.STRING;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -7,14 +9,12 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
-import static javax.persistence.EnumType.*;
 import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.persistence.Transient;
 
 import org.hibernate.validator.Length;
 import org.hibernate.validator.NotNull;
