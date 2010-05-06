@@ -1,0 +1,116 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:a="http://richfaces.org/a4j"    
+    xmlns:rich="http://richfaces.org/rich"
+    template="../layout/template.xhtml">
+    
+
+<ui:define name="body">
+<style type="text/css">
+
+	.detalhesProduto{
+	margin-top:15px;margin-left:10px; margin-right:10px;
+	}
+	
+	.detalhesLinhaA{
+		background-color: #F1F1FD;
+	}
+	
+	.detallhesLinhaB{
+	}
+
+
+    .coluna1 {  
+        vertical-align: top;          
+   }  
+      
+    .coluna2 {  
+     vertical-align: top;
+     border-right-style:solid;
+     border-right-width: thin;
+    }  
+    
+    .colunaLabelsProduto{
+    	font-size:10pt;
+    	color: #9e8686;
+    	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    
+    .colunaValoresProduto{
+		font-size:11pt;
+		text-align:right;    	
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;		
+    }
+    
+    .colunaVendedor{
+    	vertical-align: top;
+		padding-top:15px;
+		padding-left:10px; 
+		padding-right:10px;    	
+		width:50%;
+		
+    }
+
+</style>
+	<h:panelGrid columns="2" columnClasses=",colunaVendedor">
+		<h:panelGrid columns="2"  columnClasses="coluna1,coluna2" style="border-color: #CACACF;">
+			<s:div>	 
+	        	<s:graphicImage value="#{leilaoManager.produto.imagem.dados}" fileName="#{leilaoManager.produto.imagem.nome}" 
+            		style="padding-right:15px">
+            	    <s:transformImageSize width="135"  height="135"/>
+            	</s:graphicImage> 
+        	</s:div>
+			<s:div styleClass="detalhesProduto">	
+				<h:outputText value="#{leilaoManager.produto.nome}" style="color: #9393bc; font-size:28pt;font-weight:bold;"/>
+				<h:panelGrid columns="2" columnClasses="colunaLabelsProduto,colunaValoresProduto" rowClasses="detalhesLinhaA,detalhesLinhaB" style="width:100%;border-collapse:collapse;">
+					<h:outputText  value="Valor Atual:" /><h:outputText style="font-weight:bold"  value="#{leilaoManager.produto.lanceAtual.valor}" ><f:convertNumber type="currency" locale="pt_BR"/> </h:outputText>					
+					<h:outputText  value="Data do Início:"/><h:outputText  value="#{leilaoManager.produto.dataInicio}" ><f:convertDateTime locale="pt_BR"/></h:outputText>
+					<h:outputText  value="Data Final:"/><h:outputText  value="#{leilaoManager.produto.dataFim}" ><f:convertDateTime locale="pt_BR"/></h:outputText>
+        	 		<h:outputText  value="Vendedor: "/><h:outputText value="#{leilaoManager.produto.vendedor.nome}"/>
+        			<h:outputText  value="Endereço: "/><h:outputText value="#{leilaoManager.produto.vendedor.endereco}" />														
+				</h:panelGrid>
+        	</s:div>          	     
+        </h:panelGrid>
+        <h:form id="formLance" rendered="#{not leilaoManager.produto.estaFinalizado()}">
+        	<h:panelGrid columns="2" rendered="#{leilaoManager.produto.vendedor ne usuarioLogado}">
+        		<h:outputText value="#{usuarioLogado.nome}, dê o seu lance: (R$)"/>
+        		<h:inputText  value="#{leilaoManager.valorDoLanceDado}" style="text-align:right">
+        			<f:convertNumber minFractionDigits="2" locale="pt_BR" />
+        		</h:inputText>
+        		<h:commandButton value="Ok" action="#{leilaoManager.darLance}" />
+        	</h:panelGrid>
+        	<h:panelGrid columns="2" rendered="#{leilaoManager.produto.vendedor eq usuarioLogado}">
+        		<h:outputText value="#{usuarioLogado.nome}, deseja finalizar o leilão deste produto agora?"/>
+        		<a:commandLink value="Sim" action="#{leilaoManager.finalizar}" oncomplete="#{rich:component('leilaoFinalizado')}.show() "/>
+        	</h:panelGrid>           	
+        </h:form>
+                
+	</h:panelGrid>
+	<rich:panel style="margin-top:10px">
+		<p><strong>Descrição:</strong></p>
+		<p><h:outputText value="#{leilaoManager.produto.descricao}"/></p>
+	</rich:panel>
+		
+    <rich:modalPanel id="leilaoFinalizado" width="350" height="100">
+        <f:facet name="header">
+            <h:panelGroup>
+                <h:outputText value="Leilão Finalizado"></h:outputText>
+            </h:panelGroup>
+        </f:facet>
+        <f:facet name="controls">
+            <h:panelGroup>
+                <h:graphicImage value="../img/close.png" styleClass="hidelink" id="hidelink"/>
+                <rich:componentControl for="leilaoFinalizado" attachTo="hidelink" operation="hide" event="onclick"/>
+            </h:panelGroup>
+        </f:facet>
+        <h:outputText value="Parabéns, você finalizou o leilão com êxito! "></h:outputText>
+        <h:outputText value="O ganhador do leilão é #{leilaoManager.produto.lanceAtual.usuario.nome}, e seu e-mail é #{leilaoManager.produto.lanceAtual.usuario.email}. " ></h:outputText>
+        <h:outputText value="Entre em contato com o comprador para definir os meios de pagamento"/>
+    </rich:modalPanel>	
+</ui:define>
+</ui:composition>
