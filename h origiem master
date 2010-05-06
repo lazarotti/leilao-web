@@ -1,0 +1,67 @@
+commit 73be590093b8d51822be146068b7924e3af757fc
+Author: Alessandro Lazarotti <alessandrolt2@gmail.com>
+Date:   Mon May 3 20:19:42 2010 -0300
+
+    Cadastro de usuario e leilao
+
+commit 4aa579663ff9b7fd65810a74ae819b9a19c26bb1
+Author: Alessandro Lazarotti <alessandrolt2@gmail.com>
+Date:   Mon May 3 20:15:39 2010 -0300
+
+    Cadastro de usuario e leilao
+
+commit 05af642d14af20e99c3481ec1e9c6a35ff116e3b
+Author: Alessandro Lazarotti <alessandrolt2@gmail.com>
+Date:   Fri Apr 30 16:20:59 2010 -0300
+
+    ...
+
+commit c9d07cf94e9be13417a649b4bd6db82abc7659fe
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Thu Apr 29 14:25:54 2010 -0300
+
+    Teste
+
+commit dcff3686ec66e708f1550b8bfb2400643cf06c0c
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Thu Apr 29 10:59:57 2010 -0300
+
+    Reprodução do Problema do flushMode implementado
+
+commit 6851d35383de3778c712d10cdebec369c45108db
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Thu Apr 29 09:22:15 2010 -0300
+
+    Arquivos adicionados pois estavam apenas local
+
+commit 8a7397af5601a48235a267879ffe47a5a0094260
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Wed Apr 28 16:43:00 2010 -0300
+
+    Alterado nome da entidade de Item para Produto.
+    O XSeam possui uma variavel interna com o nome de Item no componente x:selectOneMenu
+    Implementação do Crud usando repositorio em andamento
+
+commit 81082ea36e5a07714f142a723f8aa661f802c504
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Wed Apr 28 12:42:55 2010 -0300
+
+    Criação do xseam-custom
+
+commit 704fb3073a63553b32126b5e04d6ffc6ea59766f
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Wed Apr 28 10:18:28 2010 -0300
+
+    Projeto ajustado com página rodando componente XSeam
+
+commit 4e68843691902cd2065e580acebff7747c3602cf
+Author: Rafael Benevides <rafabene@gmail.com>
+Date:   Tue Apr 27 23:17:27 2010 -0300
+
+    Alterações feitas na estrutura do Projeto
+
+commit 18cc331771216ee27e6095a756ea18658959581f
+Author: Alessandro Lazarotti <alessandrolt2@gmail.com>
+Date:   Thu Apr 22 18:59:32 2010 -0300
+
+    Primeiro commit do projeto
