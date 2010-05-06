@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;br.com.redhat.leilaoweb.dominio&apos; to &apos;br.com.redhat.leilaoweb.dominio.entidade&apos;&#x0A;- Original project: &apos;leilao-web&apos;&#x0A;- Original element: &apos;leilao-web/src/br.com.redhat.leilaoweb.dominio&apos;&#x0A;- Renamed element: &apos;leilao-web/src/br.com.redhat.leilaoweb.dominio.entidade&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;br.com.redhat.leilaoweb.dominio&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;br.com.redhat.leilaoweb.dominio" name="br.com.redhat.leilaoweb.dominio.entidade" qualified="false" references="true" stamp="1271969166136" textual="false" version="1.0"/>
-</session>

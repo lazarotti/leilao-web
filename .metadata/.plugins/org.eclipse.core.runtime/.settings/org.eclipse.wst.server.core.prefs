@@ -1,4 +1,0 @@
-#Wed Apr 28 10:50:09 BRT 2010
-module-start-timeout=300000
-runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<runtimes>\n  <runtime PROPERTY_EXEC_ENVIRONMENT\="JavaSE-1.6" PROPERTY_VM_ID\="1272395817243" PROPERTY_VM_TYPE_ID\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType" id\="JBoss EAP 5" location\="/java/tools/jboss-eap-5.0/jboss-as" name\="JBoss EAP 5" org.jboss.ide.eclipse.as.core.runtime.configurationLocation\="server" org.jboss.ide.eclipse.as.core.runtime.configurationName\="default" runtime-type-id\="org.jboss.ide.eclipse.as.runtime.eap.50" timestamp\="6"/>\n</runtimes>\n
-eclipse.preferences.version=1

@@ -1,6 +1,0 @@
-#Tue Apr 27 17:08:10 BRT 2010
-org.jboss.ide.eclipse.as.ui.defaultWebServer=JBoss EAP 5
-eclipse.preferences.version=1
-org.jboss.ide.eclipse.as.ui.preferences.enabledDecorators.1=true
-org.jboss.ide.eclipse.as.ui.preferences.runtime.last.type.org.jboss.ide.eclipse.as.runtime.eap.50=/java/tools/jboss-eap-5.0/jboss-as
-org.jboss.ide.eclipse.as.ui.preferences.disabled.automatic.server.view=true
