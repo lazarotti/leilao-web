@@ -1,0 +1,23 @@
+package br.com.redhat.leilaoweb.dominio.repositorio;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.xseam.model.BaseEntity;
+
+import br.gov.mec.dominiopublico.dominio.entidades.EntidadeDominioPublico;
+
+/**
+ * @author Elias Pereira Gomes Junior [elias.gomes@mec.gov.br]
+ */
+public interface Repositorio<T extends BaseEntity, I> extends Serializable {
+
+	void armazenar(T entidade);
+
+	T recuperarPorId(I id);
+
+	List<T> recuperarTodos();
+
+	void remover(T entidade);
+
+}

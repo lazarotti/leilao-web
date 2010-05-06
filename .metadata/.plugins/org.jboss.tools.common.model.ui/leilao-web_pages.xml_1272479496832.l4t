@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/leilao-web/WebContent/WEB-INF/pages.xml">
+ <TreeFormPage>
+  <Memento type="FileSeamPages22">
+   <Memento type="Pages Configuration"/>
+   <Memento type="Advanced"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

@@ -1,0 +1,26 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:x="http://www.xseam.org"
+    template="../layout/template.xhtml">
+
+    <ui:define name="body">
+
+        <h:form id="cadastroItem" styleClass="edit">
+
+			<rich:simpleTogglePanel label="Manter Item" switchType="ajax">
+		        <x:inputText name="nome" label="Nome" value="#{item.nome}" required="true" maxlength="50"/>
+		        <x:inputTextArea name="descricao" label="Descrição" value="#{item.descricao}" required="true" />
+				<x:inputNumber name="precoInicial" label="Preço inicial" value="#{item.precoInicial}" required="true" jsfConverter="javax.faces.Integer"/>
+				<x:inputNumber  name="precoFinal" label="Preço reserva" value="#{item.precoReserva}" required="true" jsfConverter="javax.faces.Integer"/>
+				<x:inputTextDate name="dataInicio" label="Data Início" value="#{item.dataInicio}" required="true"/>
+				<x:inputTextDate name="dataFim" label="Data Fim" value="#{item.dataFim}" required="true"/>
+			</rich:simpleTogglePanel>
+		</h:form>
+    </ui:define>
+</ui:composition>

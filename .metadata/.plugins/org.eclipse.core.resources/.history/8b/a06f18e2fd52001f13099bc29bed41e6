@@ -1,0 +1,26 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:s="http://jboss.com/products/seam/taglib" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:rich="http://richfaces.org/rich" xmlns:x="http://www.xseam.org" template="../layout/template.xhtml">
+
+	<ui:define name="body">
+
+		<h:form id="cadastroItem" styleClass="edit">
+
+			<rich:simpleTogglePanel label="Manter Produto" switchType="ajax">
+				<x:inputText name="id" label="Id" value="#{protudo.id}" readonly="true" />
+				<x:inputText name="nome" label="Nome" value="#{protudo.nome}" required="true" maxlength="50" />
+				<x:inputTextArea name="descricao" label="Descrição" value="#{protudo.descricao}" required="true" />
+				<x:inputNumber name="precoInicial" label="Preço inicial" value="#{protudo.precoInicial}" required="true" jsfConverter="javax.faces.Integer" />
+				<x:inputNumber name="precoFinal" label="Preço reserva" value="#{protudo.precoReserva}" required="true" jsfConverter="javax.faces.Integer" />
+				<x:inputTextDate name="dataInicio" label="Data Início" value="#{protudo.dataInicio}" required="true" />
+				<x:inputTextDate name="dataFim" label="Data Fim" value="#{protudo.dataFim}" required="true" />
+				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{protudo.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
+			</rich:simpleTogglePanel>
+
+			<div class="actionButtons"><h:commandButton action="#{protudoManager.salvar}" value="Salvar" rendered="#{empty protudo.id}" /> <h:commandButton action="#{protudoManager.atualizar}" value="Atualizar"
+				rendered="#{not empty protudo.id}" /> <h:commandButton action="#{protudoManager.remover}" value="Remover" rendered="#{not empty protudo.id}"
+				onclick="return confirm('Deseja realmente remover este registro?');" /> <h:commandButton action="#{protudoManager.novo}" value="Novo" rendered="#{not empty protudo.id}" /></div>
+		</h:form>
+	</ui:define>
+</ui:composition>

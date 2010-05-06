@@ -1,0 +1,128 @@
+package br.com.redhat.leilaoweb.infraestrutura.dao;
+
+import java.lang.reflect.ParameterizedType;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import javax.persistence.EntityManager;
+
+import org.apache.lucene.analysis.br.BrazilianAnalyzer;
+import org.apache.lucene.queryParser.ParseException;
+import org.apache.lucene.queryParser.QueryParser;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.Sort;
+import org.apache.lucene.search.SortField;
+import org.apache.lucene.util.Version;
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.jpa.FullTextQuery;
+import org.jboss.seam.annotations.In;
+
+import br.gov.mec.dominiopublico.dominio.entidades.EntidadeDominioPublico;
+import br.gov.mec.dominiopublico.dominio.repositorio.Repositorio;
+import br.gov.mec.dominiopublico.dominio.servicos.Fonetizador;
+
+public abstract class DataAccessObject<T extends EntidadeDominioPublico, I> implements Repositorio<T, I> {
+
+	private static final long serialVersionUID = 1L;
+
+	@In
+	protected EntityManager entityManager;
+
+	private Class<T> persistenceClazz = null;
+
+	@Override
+	public void remover(T entidade) {
+		entityManager.remove(entidade);
+		entityManager.flush();
+	}
+
+	@Override
+	public void armazenar(T entidade) {
+		entityManager.persist(entidade);
+		entityManager.flush();
+	}
+
+	@Override
+	public T recuperarPorId(I id) {
+		return entityManager.find(getPersistenceClass(), id);
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<T> recuperarTodos() {
+		List<T> retorno = entityManager.createQuery("SELECT c FROM " + getPersistenceClass().getSimpleName() + " c").setMaxResults(50).getResultList();
+		if (retorno.size() >= 50) {
+			throw new MuitosResultadosException();
+		}
+		return retorno;
+	}
+
+	@SuppressWarnings("unchecked")
+	public List<T> recuperarTodosSemLimite() {
+		List<T> retorno = entityManager.createQuery("SELECT c FROM " + getPersistenceClass().getSimpleName() + " c").getResultList();
+		return retorno;
+	}
+
+	@SuppressWarnings("unchecked")
+	protected Class<T> getPersistenceClass() {
+		if (persistenceClazz == null) {
+			persistenceClazz = (Class<T>) ((ParameterizedType) this.getClass().getGenericSuperclass()).getActualTypeArguments()[0];
+		}
+		return persistenceClazz;
+	}
+
+	public void setEntityManager(EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+
+	/**
+	 * Faz uma pesquisa utilizando o hibernate search
+	 * 
+	 * @param queryLucene
+	 *            Query no formato do lucene a ser
+	 * @param obraClazz
+	 * @param sortFields
+	 * @return
+	 */
+	@SuppressWarnings("unchecked")
+	protected List<? extends T> doLuceneQuery(String queryLucene, Class<? extends T> obraClazz, String... sortFields) {
+		Query luceneQuery = null;
+		try {
+			QueryParser queryParser = new org.apache.lucene.queryParser.analyzing.AnalyzingQueryParser(Version.LUCENE_29, "", new BrazilianAnalyzer(Version.LUCENE_29));
+			luceneQuery = queryParser.parse(queryLucene);
+		} catch (ParseException e) {
+			e.printStackTrace();
+			return new ArrayList<T>();
+		}
+		FullTextQuery query = ((FullTextEntityManager) entityManager).createFullTextQuery(luceneQuery, obraClazz);
+		for (String sortField : sortFields) {
+			org.apache.lucene.search.Sort sort = new Sort(new SortField(sortField));
+			query = query.setSort(sort);
+		}
+		List<T> retorno = query.setMaxResults(50).getResultList();
+		if (retorno.size() >= 50) {
+			throw new MuitosResultadosException();
+		}
+		return retorno;
+	}
+
+	@SuppressWarnings("unchecked")
+	protected List<T> doLuceneQuery(String queryLucene, String... sortFields) {
+		return (List<T>) doLuceneQuery(queryLucene, getPersistenceClass(), sortFields);
+	}
+
+	protected String getTermoLuceneFonetizadoParaBuscaAnd(String termo) {
+		StringBuilder sb = new StringBuilder();
+		StringTokenizer st = new StringTokenizer(termo);
+		sb.append(" ( ");
+		while (st.hasMoreTokens()) {
+			sb.append("+");
+			sb.append(Fonetizador.fonetizar(st.nextToken()));
+			sb.append("* ");
+		}
+		sb.append(" ) ");
+
+		return sb.toString();
+	}
+}

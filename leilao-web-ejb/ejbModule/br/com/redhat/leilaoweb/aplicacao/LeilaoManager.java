@@ -1,5 +1,7 @@
 package br.com.redhat.leilaoweb.aplicacao;
 
+import java.rmi.RemoteException;
+
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
@@ -7,11 +9,13 @@ import org.jboss.seam.annotations.Scope;
 import org.jboss.seam.international.StatusMessages;
 import org.jboss.seam.international.StatusMessage.Severity;
 
+import br.com.redhat.leilaoejb.LeilaoLegado;
 import br.com.redhat.leilaoweb.dominio.entidade.Produto;
 import br.com.redhat.leilaoweb.dominio.entidade.Usuario;
 import br.com.redhat.leilaoweb.dominio.exception.LanceBaixoException;
 import br.com.redhat.leilaoweb.dominio.exception.LeilaoFinalizadoException;
 import br.com.redhat.leilaoweb.dominio.repositorio.RepositorioProduto;
+import br.com.redhat.leilaoweb.infraestrutura.servicelocator.LeilaoLegadoServiceLocator;
 
 
 @Name("leilaoManager")
@@ -26,7 +30,7 @@ public class LeilaoManager{
 	
 	@In
 	private StatusMessages statusMessages;
-	
+			
 	private double valorDoLanceDado;
 	
 	private Produto produto;
@@ -48,8 +52,8 @@ public class LeilaoManager{
 	public void finalizar(){
 		
 		produto.finalizarLeilao();
-		repositorioProduto.armazenar(produto);		
-		
+		repositorioProduto.armazenar(produto);	
+				
 		/* CODIGO ALTERNATIVO INVOCANDO UM EJB2 REMOTO
 		LeilaoLegadoServiceLocator serviceLocator = new LeilaoLegadoServiceLocator();
 		try {
@@ -61,6 +65,18 @@ public class LeilaoManager{
 			statusMessages.add(Severity.ERROR,"Erro na invocacao do EJB Legado ");
 			e.printStackTrace();
 		}*/
+		
+		/* INTEGRANDO O LEGADO COM UNWRAP
+		  try {
+		 
+			
+			produto = leilaoLegado.finalizarLeilao(produto);
+			repositorioProduto.armazenar(produto);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} */
+		
 
 	}
 	

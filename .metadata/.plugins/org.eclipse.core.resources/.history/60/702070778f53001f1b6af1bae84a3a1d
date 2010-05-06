@@ -1,0 +1,8 @@
+package br.com.redhat.leilaoweb.dominio.repositorio;
+
+import br.com.redhat.leilaoweb.dominio.entidade.Categoria;
+
+public interface RepositorioSubCategoria extends Repositorio<Categoria> {
+	
+
+}

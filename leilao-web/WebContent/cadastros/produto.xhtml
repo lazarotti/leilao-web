@@ -5,10 +5,9 @@
 
 	<ui:define name="body">
 
-		<h:form id="cadastroItem" styleClass="edit">
+		<h:form id="cadastroItem">
 
-			<rich:simpleTogglePanel label="Manter Produto" switchType="ajax">
-				<x:inputText name="id" label="Id" value="#{produto.id}" readonly="true" />
+			<rich:simpleTogglePanel label="Cadastrar Produto" switchType="ajax" >
 				<x:inputText name="nome" label="Nome" value="#{produto.nome}" required="true" maxlength="50" />
 				<x:inputTextArea name="descricao" label="Descrição" value="#{produto.descricao}" required="true" />
 				<x:inputNumber name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}" required="true"  jsfConverter="javax.faces.Double" />

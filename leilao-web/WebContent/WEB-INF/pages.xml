@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.2.xsd"
 
        no-conversation-view-id="/home.xhtml"
-       login-view-id="/login.xhtml">
+       login-view-id="/login/login.xhtml">
 
     <page view-id="*">
         <navigation>
@@ -50,7 +50,7 @@
     </exception>
     
     <exception class="org.jboss.seam.security.NotLoggedInException">
-        <redirect view-id="/login.xhtml">
+        <redirect view-id="/login/login.xhtml">
             <message severity="warn">#{messages['org.jboss.seam.NotLoggedIn']}</message>
         </redirect>
     </exception>

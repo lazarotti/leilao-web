@@ -3,17 +3,34 @@
  */
 package br.com.redhat.leilaoweb.infraestrutura.servicelocator;
 
+import java.rmi.RemoteException;
+
+import javax.ejb.CreateException;
+import javax.naming.NamingException;
+import javax.persistence.UniqueConstraint;
+
+import org.apache.log4j.Logger;
+import org.jboss.seam.annotations.AutoCreate;
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Unwrap;
+
+import br.com.redhat.leilaoejb.LeilaoLegado;
+
 /**
  * Utility class for LeilaoLegado.
  * @generated 
  * @wtp generated
  */
+@Name("leilaoLegado")
+@AutoCreate
 public class LeilaoLegadoServiceLocator
 {
-   /** Cached remote home (EJBHome). Uses lazy loading to obtain its value (loaded by getHome() methods). */
+
+    Logger logger = Logger.getLogger(LeilaoLegadoServiceLocator.class);	
+	
+	/** Cached remote home (EJBHome). Uses lazy loading to obtain its value (loaded by getHome() methods). */
    private static br.com.redhat.leilaoejb.LeilaoLegadoHome cachedRemoteHome = null;
-
-
+   
    private static Object lookupHome(java.util.Hashtable environment, String jndiName, Class narrowTo) throws javax.naming.NamingException {
       // Obtain initial context
       javax.naming.InitialContext initialContext = new javax.naming.InitialContext(environment);
@@ -41,6 +58,25 @@ public class LeilaoLegadoServiceLocator
             cachedRemoteHome = (br.com.redhat.leilaoejb.LeilaoLegadoHome) lookupHome(null, br.com.redhat.leilaoejb.LeilaoLegadoHome.JNDI_NAME, br.com.redhat.leilaoejb.LeilaoLegadoHome.class);
       }
       return cachedRemoteHome;
+   }
+   
+   @Unwrap
+   public LeilaoLegado obterLeiLaoLegado(){
+	   
+	   LeilaoLegado leilaoLegado;
+	try {
+		leilaoLegado = getHome().create();
+	} catch (RemoteException e) {
+		logger.error("Erro na recuperacao do EJB LeilaoLegado ", e);
+		throw new RuntimeException(e);
+	} catch (CreateException e) {
+		logger.error("Erro na recuperacao do EJB LeilaoLegado ", e);
+		throw new RuntimeException(e);		
+	} catch (NamingException e) {
+		logger.error("Erro na recuperacao do EJB LeilaoLegado ", e);
+		throw new RuntimeException(e);		
+	}
+	   return leilaoLegado;
    }
 
    /**

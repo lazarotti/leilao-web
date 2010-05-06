@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="leilao-eletronico">
+        <property name="context-root" value="leilao-eletronico"/>
+        <property name="java-output-path" value="/leilao-eletronico/build/classes"/>
+    </wb-module>
+</project-modules>

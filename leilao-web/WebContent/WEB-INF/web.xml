@@ -23,7 +23,7 @@
 	</servlet-mapping>
 	<context-param>
 		<param-name>org.richfaces.SKIN</param-name>
-		<param-value>blueSky</param-value>
+		<param-value>classic</param-value>
 	</context-param>
 	<listener>
 		<listener-class>org.jboss.seam.servlet.SeamListener</listener-class>

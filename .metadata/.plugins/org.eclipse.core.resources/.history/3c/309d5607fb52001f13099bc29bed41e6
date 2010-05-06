@@ -1,0 +1,7 @@
+package br.com.redhat.leilaoweb.dominio.repositorio;
+
+import br.com.redhat.leilaoweb.dominio.entidade.Item;
+
+public interface RepositorioItem extends Repositorio<Item> {
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/leilao-web/WebContent/cadastros/item.page.xml">
+ <TreeFormPage>
+  <Memento type="FileSeamPage22">
+   <Memento type="Components"/>
+   <Memento type="Advanced"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>
