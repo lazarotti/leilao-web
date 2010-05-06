@@ -15,7 +15,7 @@
             	<end-conversation before-redirect="true" root="true"/>
                 <redirect view-id="/cadastros/produto.xhtml"/>
             </rule>
-        </navigation>
+   		</navigation> 
     </page>
 
     <exception class="org.jboss.seam.framework.EntityNotFoundException">

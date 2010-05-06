@@ -11,8 +11,7 @@
 				<x:inputText name="id" label="Id" value="#{produto.id}" readonly="true" />
 				<x:inputText name="nome" label="Nome" value="#{produto.nome}" required="true" maxlength="50" />
 				<x:inputTextArea name="descricao" label="Descrição" value="#{produto.descricao}" required="true" />
-				<x:inputNumber name="precoInicial" label="Preço inicial" value="#{produto.precoInicial}" required="true" jsfConverter="javax.faces.Integer" />
-				<x:inputNumber name="precoFinal" label="Preço reserva" value="#{produto.precoReserva}" required="true" jsfConverter="javax.faces.Integer" />
+				<x:inputNumber name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}" required="true"  jsfConverter="javax.faces.Double" />
 				<x:inputTextDate name="dataInicio" label="Data Início" value="#{produto.dataInicio}" required="true" />
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
 				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>

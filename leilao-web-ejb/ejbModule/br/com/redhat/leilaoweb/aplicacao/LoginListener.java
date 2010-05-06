@@ -29,6 +29,7 @@ public class LoginListener {
 	
 	@Observer(Identity.EVENT_LOGIN_SUCCESSFUL)	
      public void atribuirUsuarioParaSessao(){		 
+		 System.out.println("Identity getname ....  "+ identity.getPrincipal().getName());
 		 this.usuarioLogado = (Usuario)entityManager.createQuery("select usuario from Usuario usuario where usuario.login = :identity")
 		 	.setParameter("identity", identity.getPrincipal().getName()).getSingleResult();
 	 }

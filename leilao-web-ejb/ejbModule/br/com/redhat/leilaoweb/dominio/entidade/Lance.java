@@ -21,7 +21,6 @@ public class Lance extends BaseEntity{
 		this.produto = produto;
 		this.usuario = usuario;
 		this.valor = valor;
-		this.data = new Date();
 	}
 
 	@ManyToOne

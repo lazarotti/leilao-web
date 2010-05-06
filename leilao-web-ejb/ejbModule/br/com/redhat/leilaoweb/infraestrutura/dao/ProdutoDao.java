@@ -4,7 +4,9 @@ import java.util.List;
 
 import org.jboss.seam.annotations.AutoCreate;
 import org.jboss.seam.annotations.Name;
+import org.jboss.seam.framework.EntityQuery;
 
+import br.com.redhat.leilaoweb.dominio.entidade.Lance;
 import br.com.redhat.leilaoweb.dominio.entidade.Produto;
 import br.com.redhat.leilaoweb.dominio.repositorio.RepositorioProduto;
 
@@ -22,6 +24,10 @@ public class ProdutoDao extends BaseDao<Produto> implements RepositorioProduto {
 				"				         where produto.nome like :nome")
 			.setParameter("nome", "%"+nome+"%").getResultList();
 	}
-
+	
+	public Lance lanceMaior(Produto produto){
+		return (Lance)entityManager.createQuery("select max(lance.valor) from Lance lance where lance.produto = :produto")
+			.setParameter("produto", produto).getSingleResult();
+	}
 
 }

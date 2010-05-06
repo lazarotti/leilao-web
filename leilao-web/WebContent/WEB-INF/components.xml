@@ -72,8 +72,13 @@
    </drools:rule-base>
 
    <security:rule-based-permission-resolver security-rules="#{securityRules}"/>
+   
 
-   <security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true"/>
+  <security:jpa-identity-store 
+    user-class="br.com.redhat.leilaoweb.dominio.entidade.Usuario"
+    role-class="br.com.redhat.leilaoweb.dominio.entidade.Direito"/>   
+
+   <!--  <security:identity authenticate-method="#{authenticator.authenticate}" remember-me="true"/> -->
 
    <event type="org.jboss.seam.security.notLoggedIn">
       <action execute="#{redirect.captureCurrentView}"/>

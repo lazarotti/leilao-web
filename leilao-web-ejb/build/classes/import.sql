@@ -48,12 +48,3 @@ INSERT INTO SubCategoria (id, version, categoriaPai_id, nome) VALUES (34,1,6,'Pa
 INSERT INTO Direito (id, nome, descricao) VALUES (1, 'administrador', 'Administrador de todo o sistema');
 INSERT INTO Direito (id, nome, descricao) VALUES (2, 'comprador', 'Pode comprar produtos em leilao');
 INSERT INTO Direito (id, nome, descricao) VALUES (3, 'vendedor', 'Pode vender produtos no leilao');
-
-INSERT INTO Usuario (id, version, login, nome, pontuacao, senha, endereco, email) VALUES (1, 1 , 'alazarot', 'Alessandro Lazarotti', 0, '1234','São Paulo - Brasil','alazarot@redhat.com' );
-INSERT INTO Usuario (id, version, login, nome, pontuacao, senha, endereco, email) VALUES (2, 1 , 'rafabene', 'Rafael Benevides', 0, '1234', 'Brasilia - Brasil','rafabene@redhat.com');
-INSERT INTO Usuario (id, version, login, nome, pontuacao, senha, endereco, email) VALUES (3, 1 , 'admin', 'Administrador', 0, 'admin', 'São Paulo - Brasil','admin@redhat.com' );
-
-
-INSERT INTO UsuarioDireito (usuarioId, direitoId) VALUES (3, 1);
-INSERT INTO UsuarioDireito (usuarioId, direitoId) VALUES (1, 2);
-INSERT INTO UsuarioDireito (usuarioId, direitoId) VALUES (2, 3);
