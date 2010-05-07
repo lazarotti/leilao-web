@@ -11,7 +11,6 @@ import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Observer;
 import org.jboss.seam.annotations.Out;
 import org.jboss.seam.security.Identity;
-import org.jboss.seam.security.management.JpaIdentityStore;
 
 import br.com.redhat.leilaoweb.dominio.entidade.Usuario;
 
@@ -25,6 +24,7 @@ public class LoginListener {
 	Identity identity;
 	
 	@In(create=true) @Out(scope=SESSION)
+	@SuppressWarnings("unused")
 	private Usuario usuarioLogado;
 	
 	@Observer(Identity.EVENT_LOGIN_SUCCESSFUL)	

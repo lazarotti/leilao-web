@@ -1,7 +1,0 @@
-package br.com.redhat.leilaoweb.aplicacao;
-
-import java.io.Serializable;
-
-public class SubCategoriaManager implements Serializable {
-
-}
