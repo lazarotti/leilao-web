@@ -12,6 +12,8 @@ import org.xseam.model.BaseEntity;
 @Entity
 public class Lance extends BaseEntity{
 	
+	private static final long serialVersionUID = 1L;
+
 	public Lance(){
 		
 	}	

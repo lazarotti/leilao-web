@@ -15,7 +15,6 @@ import org.richfaces.model.UploadItem;
 
 import br.com.redhat.leilaoweb.dominio.entidade.Produto;
 import br.com.redhat.leilaoweb.dominio.entidade.Usuario;
-import br.com.redhat.leilaoweb.dominio.exception.LanceBaixoException;
 import br.com.redhat.leilaoweb.dominio.exception.LeilaoFinalizadoException;
 import br.com.redhat.leilaoweb.dominio.repositorio.RepositorioProduto;
 import br.com.redhat.leilaoweb.dominio.vo.Imagem;
