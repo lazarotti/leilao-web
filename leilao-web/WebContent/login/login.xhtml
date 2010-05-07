@@ -1,47 +1,99 @@
-<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:s="http://jboss.com/products/seam/taglib"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:rich="http://richfaces.org/rich"
-    template="../layout/template.xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://java.sun.com/jsf/facelets"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:a="http://richfaces.org/a4j"
+		xmlns:rich="http://richfaces.org/rich"        
+        xmlns:s="http://jboss.com/products/seam/taglib">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Leilão WEB</title>
+    <link rel="shortcut icon" href="#{request.contextPath}/favicon.ico"/>
+    <a:loadStyle src="resource:///stylesheet/theme.xcss"/>
+    <a:loadStyle src="/stylesheet/theme.css"/>
 
-<ui:define name="body">
 
-    <h:form id="loginForm">
+<style type="text/css">
 
-        <rich:panel>
-            <f:facet name="header">Login</f:facet>
+body { 
+	height:100%;	
+	margin: 0;
+	padding: 0;
+	background-color:gray;
+	text-align: center; /* hack para o IE */
+}
 
-            <p>Please login here</p>
+.rows{
+	text-align: center;
+    vertical-align: middle; 
+}
 
-            <div class="dialog">
-                <h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
-                    <h:outputLabel for="username">Username</h:outputLabel>
+#tudo {
+	width: 760px;
+	margin: 0 auto;
+	padding-top:15px;
+	padding-bottom:15px; 	
+	background-color:white;	
+	text-align: left; /* "remédio" para o hack do IE */
+}
+
+#conteudo {
+	padding: 5px;
+	background-color:white;
+}
+</style>
+</head>
+
+<body>
+<div id="tudo"> 
+	
+
+    <h:form id="login">
+	<div>
+        <rich:panel style="width:400px;margin-left:169px;background-color:white">	
+ <h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value" >
+  <h:graphicImage value="../img/blue_auction_hammer.jpg"  />
+    <s:div style="margin-left:40px;font-size: 30pt;COLOR: #7f7f7f;font-family: 'Lucida Grande' , 'Lucida Sans', Verdana, Sans-Serif;">
+      Leilão na <br/><span style="font-size: 50pt;">WEB</span>
+   </s:div>
+ </h:panelGrid>
+            
+
+       <div class="dialog">
+       <h:messages id="messages" globalOnly="true" styleClass="message"
+            errorClass="errormsg" infoClass="infomsg" warnClass="warnmsg"
+            rendered="#{showGlobalMessages != 'false'}"/>
+                <h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value" > 
+                    <h:outputLabel for="username" value="Nome de usuário"/>
                     <h:inputText id="username"
                               value="#{credentials.username}"/>
-                    <h:outputLabel for="password">Password</h:outputLabel>
+                    <h:outputLabel for="password" value="Senha"/>
                     <h:inputSecret id="password"
                                 value="#{credentials.password}"/>
-                    <h:outputLabel for="rememberMe">Remember me</h:outputLabel>
-                    <h:selectBooleanCheckbox id="rememberMe"
-                                          value="#{rememberMe.enabled}"/>
+					
+					<h:outputLabel for="verifyCaptcha" value="Imagem "/>			
+					<h:inputText id="verifyCaptcha" value="#{captcha.response}" required="true">
+   						<s:validate />
+					</h:inputText>                                          
                 </h:panelGrid>
             </div>
-
-            <p>
-              <i>Note - </i> You may login with the username 'admin' and a blank password.
-            </p>
-
+			<div align="center">
+            	<h:panelGrid columns="1" rowClasses="row" columnClasses="rows">
+					<h:graphicImage value="/seam/resource/captcha"/>
+						<h:message for="verifyCaptcha" style="color: #ff0000" /> 
+						Digite as letras que aparecem na figura acima no campo Imagem                      
+            	</h:panelGrid>  
+            	<h:commandButton value="Login" action="#{identity.login}"/>   
+			</div>
+			 			
         </rich:panel>
 
-        <div class="actionButtons">
-            <h:commandButton id="submit" value="Login" action="#{identity.login}"/>
-        </div>
+	</div>
+    </h:form> 
+</div>
 
-    </h:form>
 
- </ui:define>
-</ui:composition>
+</body>
+</html>

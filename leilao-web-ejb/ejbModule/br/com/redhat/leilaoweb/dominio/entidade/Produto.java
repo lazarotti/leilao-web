@@ -18,8 +18,11 @@ import javax.persistence.TemporalType;
 
 import org.hibernate.validator.Length;
 import org.hibernate.validator.NotNull;
+import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.AutoCreate;
 import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Role;
+import org.jboss.seam.annotations.Scope;
 import org.xseam.model.BaseEntity;
 
 import br.com.redhat.leilaoweb.dominio.exception.LanceBaixoException;
@@ -28,6 +31,7 @@ import br.com.redhat.leilaoweb.dominio.vo.Imagem;
 
 @Entity
 @Name("produto")
+@Role(name="produtoFiltro")
 @AutoCreate
 public class Produto extends BaseEntity {
 

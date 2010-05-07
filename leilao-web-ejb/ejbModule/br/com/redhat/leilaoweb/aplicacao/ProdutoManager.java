@@ -5,11 +5,14 @@ import java.io.Serializable;
 
 import org.jboss.seam.ScopeType;
 import org.jboss.seam.annotations.In;
+import org.jboss.seam.annotations.Logger;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Out;
 import org.jboss.seam.annotations.Scope;
+import org.jboss.seam.annotations.security.Restrict;
 import org.jboss.seam.international.StatusMessages;
 import org.jboss.seam.international.StatusMessage.Severity;
+import org.jboss.seam.log.Log;
 import org.richfaces.event.UploadEvent;
 import org.richfaces.model.UploadItem;
 
@@ -25,6 +28,9 @@ import br.com.redhat.leilaoweb.dominio.vo.Imagem;
 public class ProdutoManager implements Serializable {
 		
 	private static final long serialVersionUID = 1L;
+	
+	@Logger
+	private Log logger;
 
 	@In
 	@Out(required=false) // remover e novo
@@ -60,7 +66,7 @@ public class ProdutoManager implements Serializable {
 			repositorioProduto.armazenar(produto);
 			statusMessages.add(Severity.INFO, "Item #{item.nome} salvo com sucesso!");			
 		} catch (LeilaoFinalizadoException e) {
-			statusMessages.add(Severity.ERROR, "A data final é menor do que o dia de hoje. Tente outra data.");			
+			statusMessages.add(Severity.ERROR, "A data final é menor do que o dia de hoje. Tente outra data.");		 	
 		}
 	}
 
@@ -83,7 +89,8 @@ public class ProdutoManager implements Serializable {
 	}
 
 	public void novo() {
-		produto = null;
+		this.produto = null;
+		this.lanceInicial=0;
 	}
 	
 	//getters and setters

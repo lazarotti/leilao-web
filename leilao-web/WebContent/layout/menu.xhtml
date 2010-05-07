@@ -7,21 +7,19 @@
     xmlns:rich="http://richfaces.org/rich">
     <rich:toolBarGroup>
         <h:outputText value="#{projectName}:"/>
-        <s:link id="menuHomeId" view="/leilao/leilaoFiltro.xhtml" value="Home" propagation="end"/>
+        <s:link id="menuHomeId" action="menuLeilao" value="Leilão"/>
     </rich:toolBarGroup>
     <rich:dropDownMenu showDelay="250" hideDelay="0" submitMode="none">
-        <f:facet name="label">Browse data</f:facet>
-	<rich:menuItem>
-    	<s:link view="/cadastros/usuarioFiltro.xhtml"
+        <f:facet name="label">Cadastros</f:facet>
+	<rich:menuItem> 
+    	<s:link action="menuUsuario"
            	value="Usuario"
-			includePageParams="false"
-     		propagation="end"/>
+			includePageParams="false"/>
      </rich:menuItem>
 	<rich:menuItem>
-    	<s:link view="/cadastros/produto.xhtml"
+    	<s:link action="menuProduto"
            	value="Produto"
-			includePageParams="false"
-     		propagation="end"/>
+			includePageParams="false"/>
      </rich:menuItem>    
      
     </rich:dropDownMenu>
@@ -29,6 +27,6 @@
     <rich:toolBarGroup location="right">
         <h:outputText id="menuWelcomeId" value="signed in as: #{credentials.username}" rendered="#{identity.loggedIn}"/>
         <s:link id="menuLoginId" view="/login/login.xhtml" value="Login" rendered="#{not identity.loggedIn}" propagation="none"/>
-        <s:link id="menuLogoutId" view="/home.xhtml" action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none"/>
+        <s:link id="menuLogoutId"  action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none"/>
     </rich:toolBarGroup>
 </rich:toolBar>

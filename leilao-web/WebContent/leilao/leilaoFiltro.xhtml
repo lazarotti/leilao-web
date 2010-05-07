@@ -16,7 +16,7 @@
 
             <s:decorate template="../layout/display.xhtml">
                 <ui:define name="label">Produto</ui:define>
-                <h:inputText id="nome" value="#{produto.nome}"/>
+                <h:inputText id="nome" value="#{produtoFiltro.nome}"/>
             </s:decorate>
 
         </rich:simpleTogglePanel>
@@ -32,13 +32,13 @@
     <div class="results" id="usuarioListDiv">
 
     <h:outputText value="A procura nao encontrou nenhum resultado."
-               rendered="#{empty repositorioProduto.buscaPorNome(produto.nome)}"/>
+               rendered="#{empty repositorioProduto.buscaPorNome(produtoFiltro.nome)}"/>
 
     <rich:dataTable id="tabelaProdutos"
                 var="_produto"
                 columnClasses=""
-              value="#{repositorioProduto.buscaPorNome(produto.nome)}"
-           rendered="#{not empty repositorioProduto.buscaPorNome(produto.nome)}" >
+              value="#{repositorioProduto.buscaPorNome(produtoFiltro.nome)}"
+           rendered="#{not empty repositorioProduto.buscaPorNome(produtoFiltro.nome)}" >
          
         <h:column>
             <f:facet name="header">

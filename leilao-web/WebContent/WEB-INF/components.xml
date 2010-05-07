@@ -36,6 +36,7 @@
 
 	<component auto-create="true" class="br.com.redhat.leilaoweb.dominio.entidade.Usuario"
 		name="usuarioFiltro" />
+		
 	<framework:entity-query ejbql="from Usuario usuario"
 		entity-manager="#{entityManager}" name="usuarioFiltroQuery"
 		order="nome">

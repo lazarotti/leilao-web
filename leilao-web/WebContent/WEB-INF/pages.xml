@@ -6,15 +6,20 @@
        no-conversation-view-id="/home.xhtml"
        login-view-id="/login/login.xhtml">
 
-    <page view-id="*">
-        <navigation>
-            <rule if-outcome="home">
-                <redirect view-id="/home.xhtml"/>
-            </rule>
+    <page view-id="*" login-required="true">
+        <navigation> 
             <rule if-outcome="menuProduto">
             	<end-conversation before-redirect="true" root="true"/>
                 <redirect view-id="/cadastros/produto.xhtml"/>
             </rule>
+            <rule if-outcome="menuUsuario">
+            	<end-conversation before-redirect="true" root="true"/>
+                <redirect view-id="/cadastros/usuarioFiltro.xhtml"/>
+            </rule>
+            <rule if-outcome="menuLeilao">
+            	<end-conversation before-redirect="true" root="true"/>
+                <redirect view-id="/cadastros/leilaoFiltro.xhtml"/>
+            </rule>                        
    		</navigation> 
     </page>
 
@@ -56,7 +61,7 @@
     </exception>
     
     <exception class="javax.faces.application.ViewExpiredException">
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/login/login.xhtml">
             <message severity="warn">Your session has timed out, please try again</message>
         </redirect>
     </exception>

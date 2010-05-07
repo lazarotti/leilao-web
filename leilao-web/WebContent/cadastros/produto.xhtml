@@ -4,52 +4,71 @@
 	    xmlns:a="http://richfaces.org/a4j"  xmlns:h="http://java.sun.com/jsf/html" xmlns:rich="http://richfaces.org/rich" xmlns:x="http://www.xseam.org" template="../layout/template.xhtml">
 
 	<ui:define name="body">
+	<style type="text/css">
+	
+		.alinharAcima{
+		  vertical-align: top;
+		} 	
+	
+	</style>
 
 		<h:form id="cadastroItem">
 
-			<rich:simpleTogglePanel label="Cadastrar Produto" switchType="ajax" >
+		
+			<rich:simpleTogglePanel label="Cadastrar Produtoxx" switchType="ajax" >
+			<h:panelGrid columnClasses="alinharAcima, alinharAcima, alinharAcima" columns="3" >
+			  <s:div>			
 				<x:inputText name="nome" label="Nome" value="#{produto.nome}" required="true" maxlength="50" />
 				<x:inputTextArea name="descricao" label="Descrição" value="#{produto.descricao}" required="true" />
-				<x:inputNumber name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}" required="true"  jsfConverter="javax.faces.Double" />
+				<x:inputNumber  name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}"  jsfConverter="javax.faces.Double" required="true"  />
 				<x:inputTextDate name="dataInicio" label="Data Início" value="#{produto.dataInicio}" required="true" />
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
 				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>
 				<x:selectOneMenu items="#{repositorioSubCategoria.recuperarPorCategoria(produto.categoria)}" name="subCategorias" value="#{produto.subCategoria}" label="Categoria" itemsLabel="nome" itemsType="entity"/>
-
-            <rich:fileUpload fileUploadListener="#{produtoManager.imagemUpload}"
-                maxFilesQuantity="1"
-                id="upload"
-                immediateUpload="true"
-                acceptedTypes="jpg, gif, png, bmp" allowFlash="true">
-                <a:support event="onuploadcomplete" reRender="produtoImagem" />
-            </rich:fileUpload>
-
-            <rich:panel id="produtoImagem" bodyClass="info" >
-               <f:facet name="header">
-                   <h:outputText value="Imagem" />
-               </f:facet>
-                        <rich:panel bodyClass="rich-laguna-panel-no-header">
-                            <h:panelGrid columns="2">
-                            <s:graphicImage id="imagem"  value="#{produto.imagem.dados}" fileName="#{produto.imagem.nome}}">
-                            	<s:transformImageSize maintainRatio="true"  height="200"/>
-                            </s:graphicImage>
-                                <h:panelGrid columns="2">
-                                    <h:outputText value="Nome da Imagem:" />
-                                    <h:outputText value="#{produto.imagem.nome}" />
-                                    <h:outputText value="Tamanho do Arquivo (bytes):" />
-                                    <h:outputText value="#{produto.imagem.tamanho}" />
-                                </h:panelGrid>
-                            </h:panelGrid>
-                        </rich:panel>
-                </rich:panel>
-            
-                           				
+			  </s:div>
+			  
+			  <s:div>
+            	<rich:fileUpload fileUploadListener="#{produtoManager.imagemUpload}"
+            		 listWidth="300"
+            		 addControlLabel="Adicione uma imagem ao produto"
+              	 	 maxFilesQuantity="1"
+               		 id="upload"
+               		 immediateUpload="true"
+               		 acceptedTypes="jpg, gif, png, bmp" allowFlash="true">
+               		 <a:support event="onuploadcomplete" reRender="cadastroItem:produtoImagem" />
+            	</rich:fileUpload>
+            	#{produto.imagem.nome}
+              </s:div>
+			  <s:div >
+              	<rich:panel id="produtoImagem" bodyClass="info" style="margin-left:10px">
+              	
+               			   <f:facet name="header">
+               			   		 <h:outputText value="Imagem" />
+               			   </f:facet>
+                	       <rich:panel bodyClass="rich-laguna-panel-no-header">
+                           		<h:panelGrid columns="2" columnClasses="alinharAcima,alinharAcima">
+                           	   		<s:graphicImage id="imagem"  value="#{produto.imagem.dados}" fileName="#{produto.imagem.nome}">
+                            			<s:transformImageSize maintainRatio="true"  height="100"/>
+                            		</s:graphicImage>
+                            	    <h:panelGrid columns="2">
+                                	     <h:outputText value="Imagem do Produto:" />
+                                   		 <h:outputText value="#{produto.imagem.nome}" />
+                                   		 <h:outputText value="Tamanho  (bytes):" />
+                                   		 <h:outputText value="#{produto.imagem.tamanho}" />
+                                	</h:panelGrid>
+                            	</h:panelGrid>
+                        	</rich:panel>
+               	 </rich:panel>
+               	</s:div> 
+            </h:panelGrid>                				
 			</rich:simpleTogglePanel>
 						
 
-			<div class="actionButtons"><h:commandButton action="#{produtoManager.salvar}" value="Salvar" rendered="#{empty produto.id}" /> <h:commandButton action="#{produtoManager.atualizar}" value="Atualizar"
-				rendered="#{not empty produto.id}" /> <h:commandButton action="#{produtoManager.remover}" value="Remover" rendered="#{not empty produto.id}"
-				onclick="return confirm('Deseja realmente remover este registro?');" /> <h:commandButton action="#{produtoManager.novo}" value="Novo" rendered="#{not empty produto.id}" /></div>
+			<div class="actionButtons">
+			<h:commandButton action="#{produtoManager.salvar}" value="Salvar" rendered="#{empty produto.id}" />
+			<h:commandButton action="#{produtoManager.atualizar}" value="Atualizar" rendered="#{not empty produto.id}" /> 
+			<h:commandButton action="#{produtoManager.remover}" value="Remover"  rendered="#{not empty produto.id}" onclick="return confirm('Deseja realmente remover este registro?');" /> 
+			<h:commandButton action="#{produtoManager.novo}" value="Novo" rendered="#{not empty produto.id}" /></div>
 		</h:form>
 	</ui:define>
 </ui:composition>
