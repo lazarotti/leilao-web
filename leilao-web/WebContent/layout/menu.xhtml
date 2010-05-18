@@ -11,8 +11,8 @@
     </rich:toolBarGroup>
     <rich:dropDownMenu showDelay="250" hideDelay="0" submitMode="none">
         <f:facet name="label">Cadastros</f:facet>
-	<rich:menuItem> 
-    	<s:link action="menuUsuario"
+	<rich:menuItem rendered="#{s:hasRole('administrador')}"> 
+    	<s:link action="menuUsuario" 
            	value="Usuario"
 			includePageParams="false"/>
      </rich:menuItem>

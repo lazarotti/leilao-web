@@ -20,7 +20,7 @@
 			  <s:div>			
 				<x:inputText name="nome" label="Nome" value="#{produto.nome}" required="true" maxlength="50" />
 				<x:inputTextArea name="descricao" label="Descrição" value="#{produto.descricao}" required="true" />
-				<x:inputNumber  name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}"  jsfConverter="javax.faces.Double" required="true"  />
+				<x:inputNumber  name="lanceInicial" label="Lance Inicial" value="#{produtoManager.lanceInicial}" jsfConverter="javax.faces.Double" required="true"  />
 				<x:inputTextDate name="dataInicio" label="Data Início" value="#{produto.dataInicio}" required="true" />
 				<x:inputTextDate name="dataFim" label="Data Fim" value="#{produto.dataFim}" required="true" />
 				<x:selectOneMenu items="#{comboCategorias}" name="categorias" value="#{produto.categoria}" label="Categoria" itemsLabel="nome" itemsType="entity" reRender="subCategorias"/>

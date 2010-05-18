@@ -18,39 +18,39 @@
             </rule>
             <rule if-outcome="menuLeilao">
             	<end-conversation before-redirect="true" root="true"/>
-                <redirect view-id="/cadastros/leilaoFiltro.xhtml"/>
+                <redirect view-id="/leilao/leilaoFiltro.xhtml"/>
             </rule>                        
    		</navigation> 
     </page>
 
     <exception class="org.jboss.seam.framework.EntityNotFoundException">
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/erro/error.xhtml">
             <message severity="warn">Record not found</message>
         </redirect>
     </exception>
     
     <exception class="javax.persistence.EntityNotFoundException">
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/erro/error.xhtml">
             <message severity="warn">Record not found</message>
         </redirect>
     </exception>
     
     <exception class="javax.persistence.EntityExistsException">
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/erro/error.xhtml">
             <message severity="warn">Duplicate record</message>
         </redirect>
     </exception>
     
     <exception class="javax.persistence.OptimisticLockException">
         <end-conversation/>
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/erro/error.xhtml">
             <message severity="warn">Another user changed the same data, please try again</message>
         </redirect>
     </exception>
     
     <exception class="org.jboss.seam.security.AuthorizationException">
-        <redirect view-id="/error.xhtml">
-            <message severity="error">You don't have permission to access this resource</message>
+        <redirect view-id="/erro/error.xhtml">
+            <message severity="error">Você não tem permissão para acessar esta página ou recurso</message>
         </redirect>
     </exception>
     
@@ -71,7 +71,7 @@
     </exception>
      
     <exception>
-        <redirect view-id="/error.xhtml">
+        <redirect view-id="/erro/error.xhtml">
             <message severity="error">Unexpected error, please try again</message>
         </redirect>
     </exception>

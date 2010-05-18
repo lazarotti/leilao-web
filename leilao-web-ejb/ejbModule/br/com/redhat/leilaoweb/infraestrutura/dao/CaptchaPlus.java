@@ -1,4 +1,4 @@
-package br.com.redhat.leilaoweb.aplicacao;
+package br.com.redhat.leilaoweb.infraestrutura.dao;
 
 import java.awt.BasicStroke;
 import java.awt.Color;

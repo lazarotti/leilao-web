@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
-<wb-module deploy-name="leilao-web-ear-ear">
+<wb-module deploy-name="leilao-web-ear">
         <wb-resource deploy-path="/" source-path="/EarContent"/>
 <dependent-module deploy-path="/" handle="module:/resource/leilao-web-ear-ejb/leilao-web-ear-ejb">
 <dependency-type>uses</dependency-type>

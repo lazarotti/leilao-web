@@ -23,6 +23,7 @@ body {
 	padding: 0;
 	background-color:gray;
 	text-align: center; /* hack para o IE */
+	
 }
 
 .rows{
@@ -39,6 +40,17 @@ body {
 	text-align: left; /* "remédio" para o hack do IE */
 }
 
+.panel{
+	width:400px;
+	margin-left:169px;
+	background-color:white;
+	border-color: gray;
+	border-style:solid; 
+	border-width: 1px;	
+
+}
+
+
 #conteudo {
 	padding: 5px;
 	background-color:white;
@@ -52,7 +64,7 @@ body {
 
     <h:form id="login">
 	<div>
-        <rich:panel style="width:400px;margin-left:169px;background-color:white">	
+        <rich:panel styleClass="panel">	
  <h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value" >
   <h:graphicImage value="../img/blue_auction_hammer.jpg"  />
     <s:div style="margin-left:40px;font-size: 30pt;COLOR: #7f7f7f;font-family: 'Lucida Grande' , 'Lucida Sans', Verdana, Sans-Serif;">

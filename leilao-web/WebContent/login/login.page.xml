@@ -3,8 +3,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://jboss.com/products/seam/pages http://jboss.com/products/seam/pages-2.1.xsd" login-required="false">
 
-   <header name="Cache-Control" value="no-cache" />
-   <header name="Cache-Control" value="max-age=0" />   
    <navigation from-action="#{identity.login}" >
   
       <rule if="#{identity.loggedIn}">

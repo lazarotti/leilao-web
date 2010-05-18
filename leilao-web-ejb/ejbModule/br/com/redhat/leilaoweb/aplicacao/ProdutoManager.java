@@ -56,6 +56,8 @@ public class ProdutoManager implements Serializable {
         produto.setImagem(imagem);
 	}
 		
+
+	@Restrict
 	public void salvar() {
 		try {
 			
